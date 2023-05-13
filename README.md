@@ -12,6 +12,14 @@ Status of the cluster
 ```
 minikube status -p <cluster-name>
 ```
+Add worker nodes
+```
+minikube node add --worker -p <cluster-name>
+```
+Delete worker nodes
+```
+minikube node delete <node-name> -p <cluster-name>
+```
 Delete all the cluster
 ```
 minikube delete --all
