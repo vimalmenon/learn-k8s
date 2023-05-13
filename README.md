@@ -1,5 +1,11 @@
 # Learning K8S
 
+### Kubectl Sample Project
+##### FrontEnd App
+##### BackEnd App
+##### Connecting FrontEnd with BackEnd
+##### Deployment
+##### Loadbalancer
 
 ### Kubectl command
 Kubectl list all resources
