@@ -12,6 +12,10 @@ Status of the cluster
 ```
 minikube status -p <cluster-name>
 ```
+Open dashboard
+```
+minikube dashboard --url -p <cluster-name>
+```
 Add worker node
 ```
 minikube node add --worker -p <cluster-name>
