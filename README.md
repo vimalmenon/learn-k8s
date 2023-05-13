@@ -10,11 +10,13 @@
     * Deployment
     * Loadbalancer
 
+---
 ### Kubectl command
 Kubectl list all resources
 ```
 kubectl api-resources
-``` 
+```
+--- 
 ### Minikube command
 Start minikube with cluster
 ```
