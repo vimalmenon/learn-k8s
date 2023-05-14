@@ -64,6 +64,10 @@ Kubectl port forward to localhost
 ```bash
 kubectl port-forward front-end-app 3000:3000 
 ```
+Kubectl check logs
+```bash
+kubectl logs front-end-app
+```
 Kubectl delete the pod
 ```bash
 kubectl delete -f ./k8s/pods/01-Pods.yaml 
