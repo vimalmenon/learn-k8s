@@ -40,7 +40,7 @@ Docker push
 docker push vimalsmenon/front-end-app:0.0.0
 ```
 ---
-### Create the basic pods
+### Create a basic pods
 Minikube start with 2 nodes with name local-cluster
 ```bash
 minikube start -n 2 -p local-cluster
@@ -92,9 +92,6 @@ Kubectl delete the replicaset
 kubectl delete -f ./k8s/replicaset/01-ReplicaSet.yaml
 ```
 --- 
-###Question
-* Difference between replicaset and deployment
---- 
 ### Create a basic Deployment
 Kubectl create Deployment 
 ```bash
@@ -112,7 +109,9 @@ Kubectl delete the Deployment
 ```bash
 kubectl delete -f ./k8s/deployment/01-Deployment.yaml
 ```
-
+--- 
+### Question
+* Difference between replicaset and deployment
 --- 
 ### Kubectl command
 Kubectl list all resources
