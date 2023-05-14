@@ -10,6 +10,10 @@
     * Pods
     * ReplicaSet
     * Deployment
+     * Blue Green deployment
+     * Canary Deployment
+    * Service
+     * ClusterIp
     * Loadbalancer
     * Volume
     * ConfigMap
@@ -108,6 +112,20 @@ kubectl get pods
 Kubectl delete the Deployment
 ```bash
 kubectl delete -f ./k8s/deployment/01-Deployment.yaml
+```
+--- 
+### Create a basic Service (ClusterIP)
+Kubectl create Deployment 
+```bash
+kubectl apply -f ./k8s/services/01-ClusterIPService.yaml
+```
+Kubectl check service
+```bash
+kubectl get service
+```
+Kubectl delete the service
+```bash
+kubectl delete -f ./k8s/services/01-ClusterIPService.yaml
 ```
 --- 
 ### Question
