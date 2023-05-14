@@ -42,9 +42,19 @@ Kubectl list all resources
 kubectl api-resources
 ```
 --- 
+### Creating the basic pods
+Minikube start with 2 node with name local-cluster
+```bash
+minikube start -n 2 -p local-cluster
+``` 
+Minikube check status
+```bash
+minikube status -p local-cluster
+```
+--- 
 ### Minikube command
 Start minikube with cluster
-```
+```bash
 minikube start -n <number of nodes> -p <cluster-name>
 ``` 
 Status of the cluster
