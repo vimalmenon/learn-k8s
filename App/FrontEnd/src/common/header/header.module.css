@@ -1,6 +1,7 @@
-.header{
+.header {
   display: flex;
   grid-area: header;
+  background: darkgrey;
 }
 .nav {
   display: flex;
@@ -10,11 +11,12 @@
   display: flex;
   gap: 20px;
 }
-.nav > ul >li {
+.nav > ul > li {
   text-decoration: none;
   list-style-type: none;
 }
-.nav > ul >li >a {
+.nav > ul > li > a {
   text-decoration: none;
   font-size: 1.3em;
+  color: maroon;
 }

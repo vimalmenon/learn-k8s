@@ -3,7 +3,7 @@
   grid-area: body;
   grid: 1fr;
 }
-.app{
+.app {
   display: grid;
   grid-template-areas: "header" "body" "footer";
   grid-template-rows: 50px 1fr 30px;
