@@ -20,7 +20,7 @@ Navigate inside the FrontEnd folder
 cd App/FrontEnd
 ```
 Build an image with a tag
-```bash
+```docker
 docker build -tag front-end-app:0.0.0 .
 ```
 Create a tag before pushing (This is compulsory)
@@ -36,12 +36,6 @@ Docker push
 docker push vimalsmenon/front-end-app:0.0.0
 ```
 ---
-### Kubectl command
-Kubectl list all resources
-```
-kubectl api-resources
-```
---- 
 ### Creating the basic pods
 Minikube start with 2 node with name local-cluster
 ```bash
@@ -50,6 +44,12 @@ minikube start -n 2 -p local-cluster
 Minikube check status
 ```bash
 minikube status -p local-cluster
+```
+--- 
+### Kubectl command
+Kubectl list all resources
+```bash
+kubectl api-resources
 ```
 --- 
 ### Minikube command
