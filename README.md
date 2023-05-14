@@ -13,7 +13,6 @@
     * ConfigMap
     * Secret
     * More...
-
 ---
 ### Setting up FrontEnd App
 ```bash
@@ -22,7 +21,19 @@ cd App/FrontEnd
 ```bash
 docker build -tag front-end-app:0.0.0 .
 ```
-
+Create a tag before pushing
+```bash
+docker tag front-end-app:0.0.0 vimalsmenon/front-end-app:0.0.0
+```
+Docker Login
+```bash
+docker login
+```
+Need to put username and password
+Docker push
+```bash
+docker push vimalsmenon/front-end-app:0.0.0
+```
 ---
 ### Kubectl command
 Kubectl list all resources
