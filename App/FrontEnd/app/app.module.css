@@ -1,0 +1,7 @@
+.main {
+  display: grid;
+}
+.app{
+  display: grid;
+  background:green;
+}
