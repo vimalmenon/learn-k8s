@@ -6,9 +6,10 @@
     * BackEnd App
 * Integration
     * Connecting FrontEnd with BackEnd
-* Deployment
+* K8S
     * Deployment
     * Loadbalancer
+    * Volume
     * More...
 
 ---
@@ -48,4 +49,13 @@ minikube delete --all
 pie
 "Movies" : 80
 "TV shows" : 20
+```
+---
+```mermaid
+flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
 ```
