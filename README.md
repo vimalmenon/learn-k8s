@@ -9,6 +9,7 @@
 * Deployment
     * Deployment
     * Loadbalancer
+    * More...
 
 ---
 ### Kubectl command
@@ -41,4 +42,10 @@ minikube node delete <node-name> -p <cluster-name>
 Delete all the cluster
 ```
 minikube delete --all
+```
+---
+```mermaid
+pie
+"Movies" : 80
+"TV shows" : 20
 ```
