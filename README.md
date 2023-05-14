@@ -189,6 +189,14 @@ Kubectl delete namespace
 ```bash
 kubectl delete namespace <name>
 ```
+Kubectl create namespace
+ ```bash
+kubectl apply -f ./k8s/namespace/01-Namespace.yaml
+```
+Kubectl delete the service
+```bash
+kubectl apply -f ./k8s/services/02-NodePort.yaml
+```
 --- 
 ### Minikube command
 Start minikube with cluster
