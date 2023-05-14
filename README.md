@@ -10,11 +10,12 @@
     * Pods
     * ReplicaSet
     * Deployment
-     - Blue Green deployment
-     - Canary Deployment
+        - Blue Green deployment
+        - Canary Deployment
     * Service
-     - ClusterIp
-    * Loadbalancer
+        - ClusterIp
+        - NodePort
+        - Loadbalancer
     * Namespace
     * Volume
     * ConfigMap
@@ -129,6 +130,20 @@ Kubectl delete the service
 kubectl delete -f ./k8s/services/01-ClusterIPService.yaml
 ```
 --- 
+### Create a basic Service (NodePort)
+Kubectl create Deployment 
+```bash
+kubectl apply -f ./k8s/services/02-NodePort.yaml
+```
+Kubectl check service
+```bash
+kubectl get service
+```
+Kubectl delete the service
+```bash
+kubectl delete -f ./k8s/services/02-NodePort.yaml
+```
+--- 
 ### Question
 * Difference between replicaset and deployment
 --- 
@@ -183,9 +198,13 @@ Delete all the cluster
 ```bash
 minikube delete --all
 ```
-SSH to pord
+SSH to pod
 ```bash
 minikube ssh -n local-cluster-m02 -p local-cluster
+```
+Start the service (NodePort)
+```bash
+minikube service front-end-app-service -p local-cluster
 ```
 ---
 ```mermaid
