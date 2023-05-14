@@ -1,5 +1,8 @@
 # Learn K8S
 
+### Application Setup
+
+
 ### Sample Project
 * App
     * FrontEnd App
@@ -7,6 +10,7 @@
 * Integration
     * Integrate FrontEnd with BackEnd
 * K8S
+    * Namespace
     * Pods
     * ReplicaSet
     * Deployment
@@ -22,6 +26,7 @@
     * Secret
     * CronJob
     * Job
+    * Demonset
     * More...
 ---
 ### Setting up FrontEnd App
@@ -171,6 +176,18 @@ kubectl logs front-end-app -f
 Kubectl get endpoints
 ```bash
 kubectl get endpoints
+```
+Kubectl get namespaces
+```bash
+kubectl get namespaces
+```
+Kubectl create namespace
+```bash
+kubectl create namespace <name>
+```
+Kubectl delete namespace
+```bash
+kubectl delete namespace <name>
 ```
 --- 
 ### Minikube command
