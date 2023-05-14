@@ -15,21 +15,22 @@
     * More...
 ---
 ### Setting up FrontEnd App
+Navigate inside the FrontEnd folder
 ```bash
 cd App/FrontEnd
 ```
+Build an image with a tag
 ```bash
 docker build -tag front-end-app:0.0.0 .
 ```
-Create a tag before pushing
+Create a tag before pushing (This is compulsory)
 ```bash
 docker tag front-end-app:0.0.0 vimalsmenon/front-end-app:0.0.0
 ```
-Docker Login
+Docker Login with username and password
 ```bash
 docker login
 ```
-Need to put username and password
 Docker push
 ```bash
 docker push vimalsmenon/front-end-app:0.0.0
