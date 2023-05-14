@@ -15,10 +15,12 @@
     * More...
 
 ---
-### FrontEnd App
-Go To 
+### Setting up FrontEnd App
 ```bash
 cd App/FrontEnd
+```
+```bash
+docker build -tag front-end-app:0.0.0 .
 ```
 
 ---
