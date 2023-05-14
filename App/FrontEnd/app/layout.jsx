@@ -9,7 +9,7 @@ export default function MainLayout({ children }) {
       <body>
         <div className={styles.app}>
           <Header />
-          {children}
+          <main className={styles.main}>{children}</main>
           <Footer />
         </div>
       </body>

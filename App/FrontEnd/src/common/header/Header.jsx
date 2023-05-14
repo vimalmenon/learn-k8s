@@ -1,3 +1,5 @@
+import styles from "./header.module.css";
+
 export default function Header() {
-  return <header>This is header</header>;
+  return <header className={styles.header}>This is header</header>;
 }
