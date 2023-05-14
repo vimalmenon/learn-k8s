@@ -16,7 +16,10 @@
 
 ---
 ### FrontEnd App
-Go To <kbd>App/FrontEnd</kbd>
+Go To 
+```bash
+cd App/FrontEnd
+```
 
 ---
 ### Kubectl command
