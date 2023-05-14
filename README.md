@@ -75,24 +75,28 @@ Start minikube with cluster
 minikube start -n <number of nodes> -p <cluster-name>
 ``` 
 Status of the cluster
-```
+```bash
 minikube status -p <cluster-name>
 ```
 Open dashboard
-```
+```bash
 minikube dashboard --url -p <cluster-name>
 ```
 Add worker node
-```
+```bash
 minikube node add --worker -p <cluster-name>
 ```
 Delete worker node
-```
+```bash
 minikube node delete <node-name> -p <cluster-name>
-```
+```bash
 Delete all the cluster
-```
+```bash
 minikube delete --all
+```
+SSH to pord
+```bash
+minikube ssh -n local-cluster-m02 -p local-cluster
 ```
 ---
 ```mermaid
