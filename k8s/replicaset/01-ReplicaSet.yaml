@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: front-end-app-replica
+  labels:
+    type: front-end-replica
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: front-end-app
+  template: 
+    metadata:
+      name: front-end-app-pod
+      labels:
+        app: front-end-app
+    spec:
+      containers:
+      - name: front-end-app
+        image: vimalsmenon/front-end-app:0.0.0
+        ports:
+        - containerPort: 3000

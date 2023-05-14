@@ -8,6 +8,7 @@
     * Integrate FrontEnd with BackEnd
 * K8S
     * Pods
+    * ReplicaSet
     * Deployment
     * Loadbalancer
     * Volume
@@ -39,7 +40,7 @@ Docker push
 docker push vimalsmenon/front-end-app:0.0.0
 ```
 ---
-### Creating the basic pods
+### Create the basic pods
 Minikube start with 2 nodes with name local-cluster
 ```bash
 minikube start -n 2 -p local-cluster
@@ -73,6 +74,46 @@ Kubectl delete the pod
 kubectl delete -f ./k8s/pods/01-Pods.yaml 
 ```
 --- 
+### Create a basic ReplicaSet
+Kubectl create ReplicaSet 
+```bash
+kubectl apply -f ./k8s/replicaset/01-ReplicaSet.yaml
+```
+Kubectl check replicaset
+```bash
+kubectl get replicaset
+```
+Kubectl list pod
+```bash
+kubectl get pods
+```
+Kubectl delete the replicaset
+```bash
+kubectl delete -f ./k8s/replicaset/01-ReplicaSet.yaml
+```
+--- 
+###Question
+* Difference between replicaset and deployment
+--- 
+### Create a basic Deployment
+Kubectl create Deployment 
+```bash
+kubectl apply -f ./k8s/deployment/01-Deployment.yaml
+```
+Kubectl check replicaset
+```bash
+kubectl get replicaset
+```
+Kubectl list pod
+```bash
+kubectl get pods
+```
+Kubectl delete the Deployment
+```bash
+kubectl delete -f ./k8s/deployment/01-Deployment.yaml
+```
+
+--- 
 ### Kubectl command
 Kubectl list all resources
 ```bash
@@ -82,7 +123,14 @@ Kubectl getting into pod
 ```bash
 kubectl exec -it front-end-app bash
 ```
-
+Kubectl list all
+```bash
+kubectl get all
+```
+Kubectl command to show labels (Works with all the command)
+```bash
+kubectl get all --show-labels
+```
 --- 
 ### Minikube command
 Start minikube with cluster
