@@ -14,14 +14,18 @@
     * Pods
     * ReplicaSet
     * Deployment
-        - Blue Green deployment
-        - Canary Deployment
+        - Blue Green deployment (Not Covered)
+        - Canary Deployment (Not Covered)
     * Service
         - ClusterIp
         - NodePort
-        - Loadbalancer
-    * Namespace
+        - Loadbalancer (Not Covered)
     * Volume
+        - Local storage (Not Covered)
+        - Persistent volumes (Not Covered)
+        - Persistent volumes claim (Not Covered)
+        - Storage class (Not Covered)
+    * Resources
     * ConfigMap
     * Secret
     * CronJob
@@ -151,6 +155,7 @@ kubectl delete -f ./k8s/services/02-NodePort.yaml
 --- 
 ### Question
 * Difference between replicaset and deployment
+* Need to understand how to pass env variable in container in deployment
 --- 
 ### Kubectl command
 Kubectl list all resources
@@ -168,6 +173,10 @@ kubectl get all
 Kubectl command to show labels (Works with all the command)
 ```bash
 kubectl get all --show-labels
+```
+Kubectl watch for changes (Works with all the command)
+```bash
+kubectl get pods --watch
 ```
 Kubectl check logs with stream
 ```bash
