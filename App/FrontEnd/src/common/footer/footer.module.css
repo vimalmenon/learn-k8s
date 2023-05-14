@@ -1,3 +1,18 @@
 .footer{
   grid-area: footer;
+  display: flex;
+  background: darkgrey;
+  padding: 0 20px
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.version {
+  display: flex;
+  font-size: 0.8em;
+  flex: 0 0 auto;
+  align-items: center;
 }
