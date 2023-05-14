@@ -20,7 +20,7 @@ Navigate inside the FrontEnd folder
 cd App/FrontEnd
 ```
 Build an image with a tag
-```docker
+```bash
 docker build -tag front-end-app:0.0.0 .
 ```
 Create a tag before pushing (This is compulsory)
@@ -37,7 +37,7 @@ docker push vimalsmenon/front-end-app:0.0.0
 ```
 ---
 ### Creating the basic pods
-Minikube start with 2 node with name local-cluster
+Minikube start with 2 nodes with name local-cluster
 ```bash
 minikube start -n 2 -p local-cluster
 ``` 
@@ -45,12 +45,25 @@ Minikube check status
 ```bash
 minikube status -p local-cluster
 ```
+Kubectl create pod 
+```bash
+kubectl create -f ./k8s/pods/01-Pods.yaml
+```
+Kubectl list pod with all details
+```bash
+kubectl get pods -o wide
+```
+Kubectl port forward the port
+```bash
+kubectl port-forward front-end-app 3000:3000 
+```
 --- 
 ### Kubectl command
 Kubectl list all resources
 ```bash
 kubectl api-resources
 ```
+
 --- 
 ### Minikube command
 Start minikube with cluster
