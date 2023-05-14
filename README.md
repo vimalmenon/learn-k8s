@@ -10,11 +10,12 @@
     * Pods
     * ReplicaSet
     * Deployment
-     * Blue Green deployment
-     * Canary Deployment
+     - Blue Green deployment
+     - Canary Deployment
     * Service
-     * ClusterIp
+     - ClusterIp
     * Loadbalancer
+    * Namespace
     * Volume
     * ConfigMap
     * Secret
@@ -147,6 +148,14 @@ kubectl get all
 Kubectl command to show labels (Works with all the command)
 ```bash
 kubectl get all --show-labels
+```
+Kubectl check logs with stream
+```bash
+kubectl logs front-end-app -f
+```
+Kubectl get endpoints
+```bash
+kubectl get endpoints
 ```
 --- 
 ### Minikube command

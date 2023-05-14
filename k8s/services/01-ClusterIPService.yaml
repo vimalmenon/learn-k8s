@@ -9,5 +9,6 @@ spec:
   selector:
     app: front-end-app
   ports: 
-    - port: 3000
+    - name: app
+      port: 3000
       targetPort: 3000
