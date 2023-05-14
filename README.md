@@ -53,9 +53,13 @@ Kubectl list pod with all details
 ```bash
 kubectl get pods -o wide
 ```
-Kubectl port forward the port
+Kubectl port forward to localhost
 ```bash
 kubectl port-forward front-end-app 3000:3000 
+```
+Kubectl delete the pod
+```bash
+kubectl delete -f ./k8s/pods/01-Pods.yaml 
 ```
 --- 
 ### Kubectl command
