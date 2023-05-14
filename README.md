@@ -7,11 +7,14 @@
 * Integration
     * Integrate FrontEnd with BackEnd
 * K8S
+    * Pods
     * Deployment
     * Loadbalancer
     * Volume
     * ConfigMap
     * Secret
+    * CronJob
+    * Job
     * More...
 ---
 ### Setting up FrontEnd App
@@ -53,6 +56,10 @@ Kubectl list pod with all details
 ```bash
 kubectl get pods -o wide
 ```
+Kubectl list pod with labels
+```bash
+kubectl get pods -l type=front-end
+```
 Kubectl port forward to localhost
 ```bash
 kubectl port-forward front-end-app 3000:3000 
@@ -66,6 +73,10 @@ kubectl delete -f ./k8s/pods/01-Pods.yaml
 Kubectl list all resources
 ```bash
 kubectl api-resources
+```
+Kubectl getting into pod
+```bash
+kubectl exec -it front-end-app bash
 ```
 
 --- 
@@ -89,7 +100,7 @@ minikube node add --worker -p <cluster-name>
 Delete worker node
 ```bash
 minikube node delete <node-name> -p <cluster-name>
-```bash
+```
 Delete all the cluster
 ```bash
 minikube delete --all
