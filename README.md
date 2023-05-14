@@ -15,6 +15,10 @@
     * More...
 
 ---
+### FrontEnd App
+Go To <kbd>App/FrontEnd</kbd>
+
+---
 ### Kubectl command
 Kubectl list all resources
 ```
