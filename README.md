@@ -1,15 +1,17 @@
 # Learning K8S
 
-### Kubectl Sample Project
+### Sample Project
 * App
     * FrontEnd App
     * BackEnd App
 * Integration
-    * Connecting FrontEnd with BackEnd
+    * Integrate FrontEnd with BackEnd
 * K8S
     * Deployment
     * Loadbalancer
     * Volume
+    * ConfigMap
+    * Secret
     * More...
 
 ---
