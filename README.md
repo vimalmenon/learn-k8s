@@ -156,6 +156,7 @@ kubectl delete -f ./k8s/services/02-NodePort.yaml
 ### Question
 * Difference between replicaset and deployment
 * Need to understand how to pass env variable in container in deployment
+* Need to check on CustomResourceDefinition
 --- 
 ### Kubectl command
 Kubectl list all resources
@@ -205,6 +206,10 @@ kubectl apply -f ./k8s/namespace/01-Namespace.yaml
 Kubectl delete the service
 ```bash
 kubectl apply -f ./k8s/services/02-NodePort.yaml
+```
+Kubectl explains the command
+```bash
+kubectl explain pods
 ```
 --- 
 ### Minikube command
