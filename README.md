@@ -152,12 +152,20 @@ Kubectl delete the service
 ```bash
 kubectl delete -f ./k8s/services/02-NodePort.yaml
 ```
+### RBAC (Role Based Access Role)
+Location for Kube config
+```bash
+vim ~/.kube/config
+```
+
 --- 
 ### Question
 * Difference between replicaset and deployment
 * Need to understand how to pass env variable in container in deployment
 * Need to check on CustomResourceDefinition
 * what is Service Mesh
+* need to understand openssl
+* need to understand kubectl config
 --- 
 ### Kubectl command
 Kubectl list all resources
@@ -216,6 +224,10 @@ Kubectl get CPU and Memory usage
 ```bash
 kubectl top pods --all-namespaces
 ```
+Kubectl get context
+```bash
+kubectl config get-contexts
+```
 --- 
 ### Minikube command
 Start minikube with cluster
@@ -238,7 +250,7 @@ Delete worker node
 ```bash
 minikube node delete <node-name> -p <cluster-name>
 ```
-Delete all the cluster
+Delete all the cluster and profile
 ```bash
 minikube delete --all
 ```
@@ -254,9 +266,13 @@ minkube add metrics-server
 ```bash
 minikube addons enable metrics-server
 ```
-minkube addons list
+minikube addons list
 ```bash
 minikube addons list
+```
+minikube list profile
+```bash
+minikube profile list
 ```
 ---
 ```mermaid
