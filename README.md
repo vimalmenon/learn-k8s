@@ -157,6 +157,7 @@ kubectl delete -f ./k8s/services/02-NodePort.yaml
 * Difference between replicaset and deployment
 * Need to understand how to pass env variable in container in deployment
 * Need to check on CustomResourceDefinition
+* what is Service Mesh
 --- 
 ### Kubectl command
 Kubectl list all resources
@@ -211,6 +212,10 @@ Kubectl explains the command
 ```bash
 kubectl explain pods
 ```
+Kubectl get CPU and Memory usage
+```bash
+kubectl top pods --all-namespaces
+```
 --- 
 ### Minikube command
 Start minikube with cluster
@@ -244,6 +249,14 @@ minikube ssh -n local-cluster-m02 -p local-cluster
 Start the service (NodePort)
 ```bash
 minikube service front-end-app-service -p local-cluster
+```
+minkube add metrics-server
+```bash
+minikube addons enable metrics-server
+```
+minkube addons list
+```bash
+minikube addons list
 ```
 ---
 ```mermaid
