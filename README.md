@@ -166,6 +166,7 @@ vim ~/.kube/config
 * what is Service Mesh
 * need to understand openssl
 * need to understand kubectl config
+* what is rook
 --- 
 ### Kubectl command
 Kubectl list all resources
@@ -227,6 +228,10 @@ kubectl top pods --all-namespaces
 Kubectl get context
 ```bash
 kubectl config get-contexts
+```
+Kubectl check logs for container within the pod
+```bash
+kubectl logs <pod> -c <container>
 ```
 --- 
 ### Minikube command
