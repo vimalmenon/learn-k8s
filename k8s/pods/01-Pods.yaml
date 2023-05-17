@@ -13,3 +13,7 @@ spec:
     env:
     - name: APP_NAME
       value: V1
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          fieldPath: spec.nodeName

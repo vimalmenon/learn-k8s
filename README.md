@@ -168,11 +168,11 @@ kubectl get configmap app-data -o yaml
 ```
 Docker create build for version 0.0.1
 ```bash
-docker build -t vimalsmenon/front-end-app:0.0.1
+docker build -t vimalsmenon/front-end-app:0.0.1 .
 ```
 Docker push
 ```bash
-docker push
+docker push vimalsmenon/front-end-app:0.0.1
 ```
 Kubectl start pods
 ```bash

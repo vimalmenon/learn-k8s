@@ -6,7 +6,8 @@ COPY app app
 COPY src src
 COPY package.json package.json
 
-ENV APP_NAME=Test
+ENV APP_NAME=Test \
+    NODE_NAME=None
 
 RUN npm install && npm run build
 
