@@ -7,9 +7,12 @@ metadata:
 spec:
   containers:
   - name: front-end-app
-    image: vimalsmenon/front-end-app:0.0.0
+    image: vimalsmenon/front-end-app:0.0.1
     ports:
     - containerPort: 3000
     env:
     - name: APP_NAME
-      value: V1
+      valueFrom:
+        configMapKeyRef:
+          name: app-data
+          key: APP_DATA

@@ -6,6 +6,8 @@ COPY app app
 COPY src src
 COPY package.json package.json
 
+ENV APP_NAME=Test
+
 RUN npm install && npm run build
 
 EXPOSE 3000

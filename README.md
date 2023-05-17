@@ -152,6 +152,34 @@ Kubectl delete the service
 ```bash
 kubectl delete -f ./k8s/services/02-NodePort.yaml
 ```
+
+### ConfigMap
+Kubectl apply configmap
+```bash
+kubectl apply -f ./k8s/configmap/01-ConfigMap.yaml
+```
+kubectl list all configmap
+```bash
+kubectl get configmap
+```
+kubectl display values of configmap
+```bash
+kubectl get configmap app-data -o yaml
+```
+Docker create build for version 0.0.1
+```bash
+docker build -t vimalsmenon/front-end-app:0.0.1
+```
+Docker push
+```bash
+docker push
+```
+Kubectl start pods
+```bash
+kubectl create -f ./k8s/pods/02-Pods.yaml
+```
+
+
 ### RBAC (Role Based Access Role)
 Location for Kube config
 ```bash
@@ -302,6 +330,10 @@ kubectl config get-contexts
 Kubectl check logs for container within the pod
 ```bash
 kubectl logs <pod> -c <container>
+```
+Kubectl get storage class
+```bash
+kubectl get storageclass
 ```
 --- 
 ### Minikube command
