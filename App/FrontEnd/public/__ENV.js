@@ -1,1 +1,0 @@
-window.__ENV = {"NEXT_PUBLIC_APP_NAME":"VimalMenon","NEXT_PUBLIC_NODE_NAME":"Vimal Menon 1245"};

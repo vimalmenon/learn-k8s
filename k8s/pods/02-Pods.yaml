@@ -8,11 +8,16 @@ spec:
   containers:
   - name: front-end-app
     image: vimalsmenon/front-end-app:0.0.1
+    imagePullPolicy: Always
     ports:
     - containerPort: 3000
     env:
-    - name: APP_NAME
+    - name: NEXT_PUBLIC_APP_NAME
       valueFrom:
         configMapKeyRef:
           name: app-data
           key: APP_DATA
+    - name: NEXT_PUBLIC_NODE_NAME
+      valueFrom:
+        fieldRef:
+          fieldPath: spec.nodeName

@@ -1,15 +1,20 @@
-"use client";
-
-import { useEffect } from "react";
-
-
-export default function App({value}) {
-  useEffect(() => {
-    console.log(process.env.myRuntimeEnvVar)
-  },[])
+export default function App(props) {
   return (
-    <section>
-      This is Home Page {process.env.NEXT_PUBLIC_APP_NAME}
-    </section>
+    <table>
+      <tbody>
+        <tr>
+          <td>App Name</td>
+          <td>{props.appName}</td>
+        </tr>
+        <tr>
+          <td>Node Name</td>
+          <td>{props.nodeName}</td>
+        </tr>
+        <tr>
+          <td>Env</td>
+          <td>{props.env}</td>
+        </tr>
+      </tbody>
+    </table>
   );
 }

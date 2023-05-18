@@ -2,12 +2,14 @@ FROM node:18-slim
 
 WORKDIR App
 
-COPY app app
+COPY pages pages
 COPY src src
+COPY styles styles
 COPY package.json package.json
+COPY next.config.js next.config.js
 
-ENV APP_NAME=Test \
-    NODE_NAME=None
+ENV NEXT_PUBLIC_APP_NAME=None \
+    NEXT_PUBLIC_NODE_NAME=None
 
 RUN npm install && npm run build
 

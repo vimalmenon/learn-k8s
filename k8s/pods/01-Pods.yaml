@@ -10,10 +10,3 @@ spec:
     image: vimalsmenon/front-end-app:0.0.0
     ports:
     - containerPort: 3000
-    env:
-    - name: APP_NAME
-      value: V1
-    - name: NODE_NAME
-      valueFrom:
-        fieldRef:
-          fieldPath: spec.nodeName
