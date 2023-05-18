@@ -7,10 +7,11 @@ module.exports = {
     forceSwcTransforms: false,
   },
   publicRuntimeConfig: {
-    APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
-    NODE_NAME: process.env.NEXT_PUBLIC_NODE_NAME,
-    POD_NAME: process.env.NEXT_PUBLIC_POD_NAME,
-    POD_NAMESPACE: process.env.NEXT_PUBLIC_POD_NAMESPACE,
-    NODE_ENV: process.env.NODE_ENV,
+    appName: process.env.NEXT_PUBLIC_APP_NAME,
+    nodeName: process.env.NEXT_PUBLIC_NODE_NAME,
+    podName: process.env.NEXT_PUBLIC_POD_NAME,
+    podNamespace: process.env.NEXT_PUBLIC_POD_NAMESPACE,
+    podIp: process.env.NEXT_PUBLIC_POD_IP,
+    env: process.env.NODE_ENV,
   },
 };

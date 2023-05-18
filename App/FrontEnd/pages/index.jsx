@@ -17,11 +17,7 @@ const Home = (props) => {
 
 Home.getInitialProps = () => {
   return {
-    appName: publicRuntimeConfig.APP_NAME,
-    nodeName: publicRuntimeConfig.NODE_NAME,
-    podName: publicRuntimeConfig.POD_NAME,
-    podNamespace: publicRuntimeConfig.POD_NAMESPACE,
-    env: publicRuntimeConfig.NODE_ENV,
+    ...publicRuntimeConfig,
   };
 };
 

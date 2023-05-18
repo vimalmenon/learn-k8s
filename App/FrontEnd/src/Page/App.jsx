@@ -19,6 +19,10 @@ export default function App(props) {
           <td>{props.podNamespace}</td>
         </tr>
         <tr>
+          <td>POD IP</td>
+          <td>{props.podIp}</td>
+        </tr>
+        <tr>
           <td>Env</td>
           <td>{props.env}</td>
         </tr>
