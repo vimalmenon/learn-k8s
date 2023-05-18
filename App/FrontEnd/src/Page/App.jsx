@@ -1,6 +1,12 @@
 export default function App(props) {
   return (
     <table>
+      <thead>
+        <tr>
+          <td>Column</td>
+          <td>Value</td>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>App Name</td>

@@ -2,6 +2,7 @@
   display: grid;
   grid-area: body;
   grid: 1fr;
+  justify-content: center;
 }
 .app {
   display: grid;
@@ -9,4 +10,10 @@
   grid-template-rows: 50px 1fr 30px;
   grid-template-columns: 1fr;
   height: 100vh;
+}
+.mainSection {
+  display: grid;
+  min-width: 1500px;
+  width: 100%;
+  margin: 1em 0;
 }
