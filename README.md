@@ -187,13 +187,15 @@ Kubectl create pod
 kubectl apply -f ../../k8s/pods/03-Pods.yaml
 ```
 * Notes
-    - Values needs to be base64 encoded
+    - Values of secret has to be base64 encoded
+
+--- 
 ### RBAC (Role Based Access Role)
 Location for Kube config
 ```bash
 vim ~/.kube/config
 ```
-
+--- 
 ### openssl
 Openssl version with all detail (Can also be used without -a)
 ```bash
