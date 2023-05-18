@@ -20,14 +20,17 @@
         - ClusterIp
         - NodePort
         - Loadbalancer (Not Covered)
+        - Ingress
     * Volume
         - Local storage (Not Covered)
         - Persistent volumes (Not Covered)
         - Persistent volumes claim (Not Covered)
         - Storage class (Not Covered)
     * Resources
-    * ConfigMap
-    * Secret
+    * Values
+        - ConfigMap
+        - Secret
+        - Mount Secrets / config
     * CronJob
     * Job
     * Demonset
@@ -153,7 +156,7 @@ Kubectl delete the service
 kubectl delete -f ./k8s/services/02-NodePort.yaml
 ```
 --- 
-### ConfigMap
+### ConfigMap / Secret
 Kubectl apply configmap
 ```bash
 kubectl apply -f ./k8s/configmap/01-ConfigMap.yaml
