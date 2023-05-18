@@ -187,10 +187,18 @@ kubectl apply -f ../../k8s/configmap/02-Secret.yaml
 ```
 Kubectl create pod
 ```bash
-kubectl apply -f ../../k8s/pods/03-Pods.yaml
+kubectl apply -f ./k8s/pods/03-Pods.yaml
+```
+Config Path as Mount Volume
+```bash
+kubectl apply -f ./k8s/configmap/03-ConfigMap.yaml
+```
+```bash
+kubectl apply -f ./k8s/pods/04-Pods.yaml
 ```
 * Notes
     - Values of secret has to be base64 encoded
+    - Mounted volume can also be optional
 
 --- 
 ### RBAC (Role Based Access Role)

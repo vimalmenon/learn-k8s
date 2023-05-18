@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-data
+data:
+  app.data: |
+    Vimal Menon
+    Nitya Kurup
+    Krishiv Menon
