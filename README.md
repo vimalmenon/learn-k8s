@@ -178,8 +178,16 @@ Kubectl start pods
 ```bash
 kubectl create -f ./k8s/pods/02-Pods.yaml
 ```
-
-
+Kubectl secret
+```bash
+kubectl apply -f ../../k8s/configmap/02-Secret.yaml
+```
+Kubectl create pod
+```bash
+kubectl apply -f ../../k8s/pods/03-Pods.yaml
+```
+* Notes
+    - Values needs to be base64 encoded
 ### RBAC (Role Based Access Role)
 Location for Kube config
 ```bash
