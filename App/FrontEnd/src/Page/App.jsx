@@ -11,6 +11,14 @@ export default function App(props) {
           <td>{props.nodeName}</td>
         </tr>
         <tr>
+          <td>Pod Name</td>
+          <td>{props.podName}</td>
+        </tr>
+        <tr>
+          <td>POD NAMESPACE</td>
+          <td>{props.podNamespace}</td>
+        </tr>
+        <tr>
           <td>Env</td>
           <td>{props.env}</td>
         </tr>

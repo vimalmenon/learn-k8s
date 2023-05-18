@@ -9,7 +9,9 @@ COPY package.json package.json
 COPY next.config.js next.config.js
 
 ENV NEXT_PUBLIC_APP_NAME=None \
-    NEXT_PUBLIC_NODE_NAME=None
+    NEXT_PUBLIC_NODE_NAME=None \
+    NEXT_PUBLIC_POD_NAME=None \
+    NEXT_PUBLIC_POD_NAMESPACE=None
 
 RUN npm install && npm run build
 
