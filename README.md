@@ -152,7 +152,7 @@ Kubectl delete the service
 ```bash
 kubectl delete -f ./k8s/services/02-NodePort.yaml
 ```
-
+--- 
 ### ConfigMap
 Kubectl apply configmap
 ```bash
