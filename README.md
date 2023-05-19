@@ -22,7 +22,9 @@
         - Loadbalancer (Not Covered)
         - Ingress
     * Volume
-        - Local storage (Not Covered)
+        - Local storage
+            -  At pod level
+            -  At Node level
         - Persistent volumes (Not Covered)
         - Persistent volumes claim (Not Covered)
         - Storage class (Not Covered)
@@ -202,9 +204,17 @@ kubectl apply -f ./k8s/pods/04-Pods.yaml
 
 --- 
 ### Volume
-Simple Volume
+Simple Volume as pod level
 ```bash
 kubectl apply -f ./k8s/pods/05-Pods.yaml
+```
+Simple Volume as node level
+```bash
+kubectl apply -f ./k8s/pods/06-Pods.yaml
+```
+Simple Volume as node level
+```bash
+minikube ssh -p <profile-name>
 ```
 --- 
 ### RBAC (Role Based Access Role)
@@ -275,9 +285,8 @@ List all the cipher algorithms
 openssl list -cipher-algorithms
 ```
 
-
-
-* 5 pillars of Cryptography
+* Notes
+  - 5 pillars of Cryptography
     - integrity
     - confidentiality
     - Authentication
