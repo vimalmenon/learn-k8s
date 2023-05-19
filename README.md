@@ -201,6 +201,12 @@ kubectl apply -f ./k8s/pods/04-Pods.yaml
     - Mounted volume can also be optional
 
 --- 
+### Volume
+Simple Volume
+```bash
+kubectl apply -f ./k8s/pods/05-Pods.yaml
+```
+--- 
 ### RBAC (Role Based Access Role)
 Location for Kube config
 ```bash
