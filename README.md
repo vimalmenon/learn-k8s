@@ -36,6 +36,7 @@
     * CronJob
     * Job
     * Demonset
+    * Helm
     * More...
 ---
 ### Setting up FrontEnd App
