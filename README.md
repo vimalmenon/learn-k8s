@@ -13,14 +13,19 @@
     * Namespace
     * Pods
     * ReplicaSet
+    * Statefull
+        - Headless
+        - StatefullSet
     * Deployment
         - Blue Green deployment (Not Covered)
         - Canary Deployment (Not Covered)
+    * Service Mesh
     * Service
         - ClusterIp
         - NodePort
         - Loadbalancer (Not Covered)
         - Ingress
+        - Ingress controller
     * Volume
         - Local storage
             -  At pod level
