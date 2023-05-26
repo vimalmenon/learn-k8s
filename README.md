@@ -12,11 +12,7 @@ Github Repo used for learning K8S.
 ### Examples
 * Topics
     - [K8S Architecture](example/K8S%20Architecture)
-    - Pods
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; K8S Architecture
-
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pods
+    - [Pods](example/Pods)
 
 ---
 ### Sample Project

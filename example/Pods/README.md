@@ -1,4 +1,4 @@
-# K8S Architecture
+# Pods
 
 This page will show K8S design
 
