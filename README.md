@@ -1,7 +1,10 @@
 # Learn K8S
 
-### Application Setup
-
+### Application
+    * Frontend
+        - [GitHub](https://github.com/vimalmenon/k8s-frontend)
+    * Backend
+        - [GitHub](https://github.com/vimalmenon/k8s-backend)
 
 ### Sample Project
 * App
@@ -10,22 +13,11 @@
 * Integration
     * Integrate FrontEnd with BackEnd
 * K8S
-    * Namespace
     * Pods
     * ReplicaSet
-    * Statefull
-        - Headless
-        - StatefullSet
     * Deployment
-        - Blue Green deployment (Not Covered)
-        - Canary Deployment (Not Covered)
-    * Service Mesh
-    * Service
-        - ClusterIp
-        - NodePort
-        - Loadbalancer (Not Covered)
-        - Ingress
-        - Ingress controller
+    * Namespace
+    * Demonset
     * Volume
         - Local storage
             -  At pod level
@@ -33,6 +25,16 @@
         - Persistent volumes (Not Covered)
         - Persistent volumes claim (Not Covered)
         - Storage class (Not Covered)
+    * Service
+        - ClusterIp
+        - NodePort
+        - Loadbalancer (Not Covered)
+        - Ingress
+        - Ingress controller
+    * Statefull
+        - Headless
+        - StatefullSet
+    * Service Mesh
     * Resources
     * Values
         - ConfigMap
@@ -40,9 +42,10 @@
         - Mount Secrets / config
     * CronJob
     * Job
-    * Demonset
     * Helm
-    * Service Mesh
+    * Deployment strategy
+        - Blue Green deployment (Not Covered)
+        - Canary Deployment (Not Covered)
     * More...
 ---
 ### Setting up FrontEnd App
