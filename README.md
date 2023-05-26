@@ -2,9 +2,9 @@
 
 ### Application
     * Frontend
-        - [GitHub](https://github.com/vimalmenon/k8s-frontend)
+        - GitHub [link](https://github.com/vimalmenon/k8s-frontend)
     * Backend
-        - [GitHub](https://github.com/vimalmenon/k8s-backend)
+        - GitHub [link](https://github.com/vimalmenon/k8s-backend)
 
 ### Sample Project
 * App
