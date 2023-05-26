@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: frontend-app
-    image: vimalsmenon/app-frontend
+    image: vimalsmenon/app-frontend:latest
     ports:
     - containerPort: 3000
