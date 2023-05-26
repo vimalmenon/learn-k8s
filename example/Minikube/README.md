@@ -1,6 +1,12 @@
 # Minikube
 
-This page will show K8S design
+* Install Minikube using brew or any other package manager
+* Link to [Minikube](https://minikube.sigs.k8s.io/docs/start/) to install from other ways
+
+Confirm Minikube version
+```bash
+minikube version
+```
 
 ---
 ### Links
