@@ -2,7 +2,7 @@
 
 ### Pre Requisites
 * Please make sure you have minikube installed
-
+---
 ### Example
 Make sure you have minikube cluster started with 2 worker nodes
 ```bash
@@ -32,4 +32,4 @@ kubectl describe pods app-frontend-pod
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (K8S Architecture)](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
-* [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
+* [Next Topic (ReplicaSet)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)

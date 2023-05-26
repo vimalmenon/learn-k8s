@@ -15,7 +15,7 @@ Github Repo used for learning K8S.
 
 ##### Software required
 * Docker
-* minikube
+* Minikube
 
 ---
 ### Examples
