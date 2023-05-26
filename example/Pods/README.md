@@ -18,6 +18,10 @@ cd ./example/Pods
 ```
 Create a Pod
 ```bash
+kubectl create -f ./example/01-Pods.yaml 
+```
+OR
+```bash
 kubectl apply -f ./example/01-Pods.yaml 
 ```
 Check Pod status
@@ -27,6 +31,18 @@ kubectl get pods
 Get Pod detail
 ```bash
 kubectl describe pods app-frontend-pod
+```
+Kubectl port forward 
+```bash
+kubectl port-forward  app-frontend-pod 3000:3000
+```
+Get Pod logs
+```bash
+kubectl logs app-frontend-pod
+```
+Delete Pod
+```bash
+kubectl delete -f ./example/01-Pods.yaml 
 ```
 ---
 ### Links
