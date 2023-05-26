@@ -4,8 +4,7 @@
 * Link to install page of [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 
 ---
-##### Once the minikube is installed
-
+### Steps
 Check Minikube version
 ```bash
 minikube version
