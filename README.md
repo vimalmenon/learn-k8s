@@ -42,6 +42,7 @@
     * Job
     * Demonset
     * Helm
+    * Service Mesh
     * More...
 ---
 ### Setting up FrontEnd App
