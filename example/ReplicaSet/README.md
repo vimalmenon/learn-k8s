@@ -2,7 +2,7 @@
 
 ### Pre Requisites
 * Make sure you have minikube installed
-* You should have understanding on deploying the POD
+* You should have understanding on deploying a Pod
 
 ---
 ### Example
@@ -18,7 +18,7 @@ Make sure you are inside ReplicaSet folder
 ```bash
 cd ./example/ReplicaSet
 ```
-Create a Pod
+Create ReplicaSet
 ```bash
 kubectl create -f ./example/01-ReplicaSet.yaml
 ```
@@ -34,11 +34,11 @@ Get Pod Status, there will be 3 pods running
 ```bash
 kubectl get pods
 ```
-Delete Pod
+Delete ReplicaSet
 ```bash
 kubectl delete -f ./example/01-ReplicaSet.yaml
 ```
-Delete cluster (Optional) 
+Delete cluster or Clean Up(Optional) 
 ```bash
 minikube delete -p k8s
 ```
