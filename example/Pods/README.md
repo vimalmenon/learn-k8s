@@ -26,7 +26,7 @@ kubectl get pods
 ```
 Get Pod in detail
 ```bash
-kubectl describe pods frontend-app-pod
+kubectl describe pods app-frontend-pod
 ```
 ---
 ### Links

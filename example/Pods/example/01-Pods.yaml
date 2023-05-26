@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: frontend-app-pod
+  name: app-frontend-pod
   labels:
-    type: frontend-pod
+    type: frontend
 spec:
   containers:
   - name: frontend-app
