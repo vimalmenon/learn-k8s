@@ -1,9 +1,12 @@
 # Minikube
 
 * Install Minikube using brew or any other package manager
-* Link to [Minikube](https://minikube.sigs.k8s.io/docs/start/) to install from other ways
+* Link to install page of [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 
-Confirm Minikube version
+---
+#### Once the minikube is installed
+
+Check Minikube version
 ```bash
 minikube version
 ```
