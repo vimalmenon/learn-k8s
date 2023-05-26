@@ -30,6 +30,6 @@ kubectl describe pods app-frontend-pod
 ```
 ---
 ### Links
-* [Home](https://github.com/vimalmenon/k8s-frontend)
+* [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (K8S Architecture)](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
 * [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
