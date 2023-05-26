@@ -10,9 +10,13 @@ Github Repo used for learning K8S.
     - [GitHub](https://github.com/vimalmenon/k8s-backend)
 ---
 ### Examples
+* Topics
+    - K8S Architecture
+    - Pods
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; K8S Architecture
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; K8S Architect
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pods
 
 ---
 ### Sample Project
