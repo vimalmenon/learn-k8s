@@ -54,5 +54,5 @@ minikube delete -p k8s
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
-* [Previous Topic (K8S Architecture)](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
+* [Previous Topic (Minikube)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Minikube)
 * [Next Topic (ReplicaSet)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
