@@ -24,6 +24,7 @@ Github Repo used for learning K8S.
     - [Pods](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
     - [ReplicaSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
     - [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
+    - [DaemonSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/DaemonSet)
 
 ---
 ### Sample Project
@@ -32,7 +33,7 @@ Github Repo used for learning K8S.
     * ReplicaSet
     * Deployment
     * Namespace
-    * Demonset
+    * DaemonSet
     * Volume
         - Local storage
             -  At pod level

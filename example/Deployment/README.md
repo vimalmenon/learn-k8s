@@ -2,7 +2,7 @@
 
 ### Pre Requisites
 * Make sure you have minikube installed
-* You should have understanding on deploying the a Pod and ReplicaSet
+* You should have understanding on deploying a Pod and ReplicaSet
 
 ---
 ### Example
@@ -51,4 +51,4 @@ minikube delete -p k8s
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (ReplicaSet)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
-* [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
+* [Next Topic (DaemonSet)](https://github.com/vimalmenon/k8s-learn/tree/master/example/DaemonSet)
