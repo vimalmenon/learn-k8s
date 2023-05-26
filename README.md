@@ -1,10 +1,10 @@
 # Learn K8S
 
 ### Application
-    * Frontend
-        - GitHub [link](https://github.com/vimalmenon/k8s-frontend)
-    * Backend
-        - GitHub [link](https://github.com/vimalmenon/k8s-backend)
+* Frontend
+    - GitHub [link](https://github.com/vimalmenon/k8s-frontend)
+* Backend
+    - GitHub [link](https://github.com/vimalmenon/k8s-backend)
 
 ### Sample Project
 * App
