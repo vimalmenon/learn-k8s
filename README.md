@@ -9,10 +9,21 @@ Github Repo used for learning K8S.
     - Sample app created to demonstrate the backend.
     - [GitHub](https://github.com/vimalmenon/k8s-backend)
 ---
+### Pre Requisites and Software required
+##### Pre Requisites
+* Need to have basic understanding of docker and images
+
+##### Software required
+* Docker
+* minikube
+
+---
 ### Examples
 * Topics
-    - [K8S Architecture](example/K8S%20Architecture)
-    - [Pods](example/Pods)
+    - [K8S Architecture](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
+    - [Pods](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
+    - [ReplicaSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
+    - [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
 
 ---
 ### Sample Project
