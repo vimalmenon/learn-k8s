@@ -47,6 +47,10 @@ Delete Pod
 ```bash
 kubectl delete -f ./example/01-Pods.yaml 
 ```
+Delete cluster (Optional) 
+```bash
+minikube delete -p k8s
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
