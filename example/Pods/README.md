@@ -6,7 +6,7 @@
 ### Example
 Make sure you have minikube cluster started with 2 worker nodes
 ```bash
-minikube start -nodes 3 -p k8s
+minikube start --nodes 3 -p k8s
 ```
 Check cluster status
 ```bash
@@ -24,7 +24,7 @@ Check Pod status
 ```bash
 kubectl get pods
 ```
-Get Pod in detail
+Get Pod detail
 ```bash
 kubectl describe pods app-frontend-pod
 ```

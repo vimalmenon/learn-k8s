@@ -23,7 +23,7 @@ Github Repo used for learning K8S.
     - [K8S Architecture](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
     - [Pods](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
     - [ReplicaSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
-    - [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
+    - [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
 
 ---
 ### Sample Project
