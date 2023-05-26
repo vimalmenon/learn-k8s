@@ -1,17 +1,21 @@
 # Learn K8S
 
 ### Application
+Github Repo used for learning K8S.
 * Frontend
-    - GitHub [link](https://github.com/vimalmenon/k8s-frontend)
+    - Sample app created to demonstrate the frontend
+    - [GitHub](https://github.com/vimalmenon/k8s-frontend)
 * Backend
-    - GitHub [link](https://github.com/vimalmenon/k8s-backend)
+    - Sample app created to demonstrate the backend.
+    - [GitHub](https://github.com/vimalmenon/k8s-backend)
+---
+### Examples
 
+#### K8S Concept
+
+
+---
 ### Sample Project
-* App
-    * FrontEnd App
-    * BackEnd App
-* Integration
-    * Integrate FrontEnd with BackEnd
 * K8S
     * Pods
     * ReplicaSet
