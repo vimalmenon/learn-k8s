@@ -10,21 +10,25 @@ Check Minikube version
 ```bash
 minikube version
 ```
-Check Minikube profile
+List Minikube profile
 ```bash
 minikube profile list
 ```
-Start Minikube with <number> number of nodes and a profile <profile>
+Start Minikube with &lt;number&gt; number of nodes and a profile &lt;profile&gt;
 ```bash
 minikube start --nodes <number> -p <profile>
 ```
-Stop Minikube with the Profile <profile>
+Minikube check Status for profile &lt;profile&gt;
+```bash
+minikube status -p <profile>
+```
+Stop Minikube with the Profile &lt;profile&gt;
 ```bash
 minikube stop -p <profile>
 ```
-Delete Minikube with the Profile <profile>
+Delete Minikube with the Profile &lt;profile&gt;
 ```bash
-minikube dlete -p <profile>
+minikube delete -p <profile>
 ```
 ---
 ### Links
