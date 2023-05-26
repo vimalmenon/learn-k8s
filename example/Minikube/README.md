@@ -17,15 +17,15 @@ Start Minikube with &lt;number&gt; number of nodes and a profile &lt;profile&gt;
 ```bash
 minikube start --nodes <number> -p <profile>
 ```
-Minikube check Status for profile &lt;profile&gt;
+Minikube check status for a profile &lt;profile&gt;
 ```bash
 minikube status -p <profile>
 ```
-Stop Minikube with the Profile &lt;profile&gt;
+Stop Minikube with the profile &lt;profile&gt;
 ```bash
 minikube stop -p <profile>
 ```
-Delete Minikube with the Profile &lt;profile&gt;
+Delete Minikube with the profile &lt;profile&gt;
 ```bash
 minikube delete -p <profile>
 ```
