@@ -1,10 +1,10 @@
 # Pods
 
 ### Pre Requisites
-* Please make sure you have minikube installed
+* Make sure you have minikube installed
 ---
 ### Example
-Make sure you have minikube cluster started with 2 worker nodes
+Start minikube cluster with 2 worker nodes
 ```bash
 minikube start --nodes 3 -p k8s
 ```
@@ -36,6 +36,9 @@ Kubectl port forward
 ```bash
 kubectl port-forward  app-frontend-pod 3000:3000
 ```
+Check the website in the browser
+[Frontend App](http://localhost:3000/)
+
 Get Pod logs
 ```bash
 kubectl logs app-frontend-pod

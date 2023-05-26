@@ -1,6 +1,25 @@
 # ReplicaSet
 
-This page will show K8S design
+### Pre Requisites
+* Make sure you have minikube installed
+* You should have Understanding on how to deploy the POD
+
+---
+### Example
+Start minikube cluster with 2 worker nodes (Optional) 
+```bash
+minikube start --nodes 3 -p k8s
+```
+Check cluster status (Optional) 
+```bash
+minikube status -p k8s
+```
+Make sure you are inside Pods folder
+```bash
+cd ./example/ReplicaSet
+```
+
+
 
 ---
 ### Links
