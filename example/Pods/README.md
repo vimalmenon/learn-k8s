@@ -4,15 +4,30 @@
 * Please make sure you have minikube installed
 
 ### Example
-Make sure you have minikube cluster started with 2 worker node.
+Make sure you have minikube cluster started with 2 worker nodes
 ```bash
 minikube start -nodes 3 -p k8s
 ```
-Make sure you have cluster with 2 worker nodes.
+Check cluster status
 ```bash
 minikube status -p k8s
 ```
-
+Make sure you are inside Pods folder
+```bash
+cd ./example/Pods
+```
+Create a Pod
+```bash
+kubectl apply -f ./example/01-Pods.yaml 
+```
+Check Pod status
+```bash
+kubectl get pods
+```
+Get Pod in detail
+```bash
+kubectl describe pods frontend-app-pods
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-frontend)

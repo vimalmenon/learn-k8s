@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend-app-pod
+  labels:
+    type: frontend-pod
+spec:
+  containers:
+  - name: frontend-app
+    image: vimalsmenon/app-frontend
+    ports:
+    - containerPort: 3000
