@@ -30,5 +30,5 @@ kubectl get all --all-namespaces
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
-* [Previous Topic (ConfigMap)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
-* [Next Topic (Deployment)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
+* [Previous Topic (Minikube)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Minikube)
+* [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)

@@ -37,4 +37,6 @@ minikube delete -p <profile>
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (K8S Architecture)](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
-* [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
+* [Next Topic (Kubectl)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Kubectl)
+
+

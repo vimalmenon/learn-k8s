@@ -20,6 +20,7 @@ Github Repo used for learning K8S.
 ### Topics
 * [K8S Architecture](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
 * [Minikube](https://github.com/vimalmenon/k8s-learn/tree/master/example/Minikube)
+* [Kubectl](https://github.com/vimalmenon/k8s-learn/tree/master/example/Kubectl)
 * [Pods](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
 * [ReplicaSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
 * [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
@@ -27,7 +28,6 @@ Github Repo used for learning K8S.
 * [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
 * [Job](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
 * [CronJob](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
-* [Kubectl](https://github.com/vimalmenon/k8s-learn/tree/master/example/Kubectl)
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
