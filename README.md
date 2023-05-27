@@ -24,15 +24,11 @@ Github Repo used for learning K8S.
 * [ReplicaSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
 * [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
 * [DaemonSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/DaemonSet)
-
+* [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
 ---
 ### Sample Project
 * K8S
-    * Pods
-    * ReplicaSet
-    * Deployment
     * Namespace
-    * DaemonSet
     * Volume
         - Local storage
             -  At pod level
@@ -49,7 +45,6 @@ Github Repo used for learning K8S.
     * Statefull
         - Headless
         - StatefullSet
-    * Service Mesh
     * Resources
     * Values
         - ConfigMap
@@ -58,6 +53,7 @@ Github Repo used for learning K8S.
     * CronJob
     * Job
     * Helm
+    * Service Mesh
     * Deployment strategy
         - Blue Green deployment (Not Covered)
         - Canary Deployment (Not Covered)

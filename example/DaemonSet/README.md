@@ -41,11 +41,11 @@ Get nodes status
 ```bash
 kubectl get nodes -o wide
 ```
-Delete deployment
+Delete DaemonSet
 ```bash
 kubectl delete -f ./example/01-DaemonSet.yaml
 ```
-Delete cluster or Clean Up(Optional) 
+Delete cluster / Clean Up (Optional) 
 ```bash
 minikube delete -p k8s
 ```
@@ -53,5 +53,5 @@ minikube delete -p k8s
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (Deployment)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
-* [Next Topic (Pods)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Pods)
+* [Next Topic (Namespace)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
 
