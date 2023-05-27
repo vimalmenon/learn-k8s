@@ -2,7 +2,7 @@
 
 ### Pre Requisites
 * Make sure you have minikube installed
-* You should have understanding of deploying a Pod
+* You should have understanding of deploying a Pod and Job
 ---
 ### Example
 Start minikube cluster with 2 worker nodes (Optional) 
@@ -46,4 +46,4 @@ minikube delete -p k8s
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (Job)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
-* [Next Topic (CronJob)](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
+* [Next Topic (ConfigMap)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
