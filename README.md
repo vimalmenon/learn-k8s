@@ -9,10 +9,9 @@ Github Repo used for learning K8S.
     - Sample app created to demonstrate the backend.
     - [GitHub](https://github.com/vimalmenon/k8s-backend)
 ---
-### Pre Requisites and Software required
-##### Pre Requisites
-* Need to have basic understanding of docker and images
-* Need to have docket installed on the system
+### Pre Requisites
+* Need to have basic understanding of docker, container and images
+* Need to have docket installed
 ---
 ### Topics
 * [K8S Architecture](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
