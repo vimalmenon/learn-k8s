@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: app-job
+  namespace: k8s-app
+spec:
+  template:
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:glibc
+        command: ["ls",  "-ltra"]
+      restartPolicy: Never
+  backoffLimit: 1

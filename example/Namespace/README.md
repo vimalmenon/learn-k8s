@@ -1,4 +1,4 @@
-# DaemonSet
+# Namespace
 
 ### Pre Requisites
 * Make sure you have minikube installed
