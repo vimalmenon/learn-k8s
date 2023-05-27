@@ -31,7 +31,7 @@ Github Repo used for learning K8S.
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
 * Volume
-    - 
+    - [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
 ---
 ### Sample Project
 * K8S
