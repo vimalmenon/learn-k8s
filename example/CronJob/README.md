@@ -25,11 +25,11 @@ Get CornJob Status
 ```bash
 kubectl get cronjob app-job
 ```
-Get Job Status
+List Job Status
 ```bash
 kubectl get jobs
 ```
-List Job Status
+List pods status
 ```bash
 kubectl get pods
 ```

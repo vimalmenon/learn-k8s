@@ -27,6 +27,10 @@ Github Repo used for learning K8S.
 * [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
 * [Job](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
 * [CronJob](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
+* Data
+    - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
+    - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
+    - [Mount Data](https://github.com/vimalmenon/k8s-learn/tree/master/example/MountData)
 
 ---
 ### Sample Project
@@ -44,9 +48,9 @@ Github Repo used for learning K8S.
         - Loadbalancer (Not Covered)
         - Ingress
         - Ingress controller
-    * Statefull
-        - Headless
-        - StatefullSet
+        * Statefull
+            - Headless
+            - StatefullSet
     * Resources
     * Values
         - ConfigMap
