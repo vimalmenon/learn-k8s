@@ -35,6 +35,13 @@ kubectl port-forward app-frontend-pod 3000:3000
 Check the website in the browser
 [Frontend App](http://localhost:3000/)
 
+
+Delete Namespace, ConfigMap and Values from Pod
+```bash
+kubectl delete -f ./example/01-Namespace.yaml
+kubectl delete -f ./example/02-ConfigMap.yaml
+kubectl delete -f ./example/03-Pod.yaml
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
