@@ -1,4 +1,4 @@
-# ConfigMap
+# Secret
 
 ### Pre Requisites
 * Make sure you have minikube installed
@@ -18,5 +18,5 @@ minikube status -p k8s
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
-* [Previous Topic (CronJob)](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
-* [Next Topic (Secret)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
+* [Previous Topic (ConfigMap)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
+* [Next Topic (Deployment)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
