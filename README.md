@@ -30,8 +30,8 @@ Github Repo used for learning K8S.
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
-    - [Mount Data](https://github.com/vimalmenon/k8s-learn/tree/master/example/MountData)
-
+* Volume
+    - 
 ---
 ### Sample Project
 * K8S
@@ -51,7 +51,6 @@ Github Repo used for learning K8S.
         * Statefull
             - Headless
             - StatefullSet
-    * Resources
     * Values
         - ConfigMap
         - Secret
@@ -61,6 +60,7 @@ Github Repo used for learning K8S.
     * Deployment strategy
         - Blue Green deployment (Not Covered)
         - Canary Deployment (Not Covered)
+    * Resources (I have no Idea what this is)
     * More...
 ---
 ### Setting up FrontEnd App
