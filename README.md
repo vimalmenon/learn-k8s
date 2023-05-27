@@ -52,7 +52,6 @@ Github Repo used for learning K8S.
         - ConfigMap
         - Secret
         - Mount Secrets / config
-
     * Helm
     * Service Mesh
     * Deployment strategy

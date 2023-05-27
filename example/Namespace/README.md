@@ -2,7 +2,7 @@
 
 ### Pre Requisites
 * Make sure you have minikube installed
-* You should have understanding on deploying a Pod, ReplicaSet and Deployment
+* You should have understanding of deploying a Pod, ReplicaSet and Deployment
 ---
 ### Example
 Start minikube cluster with 2 worker nodes (Optional) 
