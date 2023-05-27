@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: app-frontend-daemon-set
+  labels:
+    tier: frontend
+spec:
+  selector:
+    matchLabels:
+      app: app-frontend
+  template: 
+    metadata:
+      name: app-frontend-pod
+      labels:
+        app: app-frontend
+    spec:
+      containers:
+      - name: app-frontend
+        image: vimalsmenon/app-frontend:latest
+        ports:
+        - containerPort: 3000

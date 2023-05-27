@@ -25,7 +25,11 @@ Stop Minikube with the profile &lt;profile&gt;
 ```bash
 minikube stop -p <profile>
 ```
-Delete Minikube with the profile &lt;profile&gt;
+Switch to specific profile &lt;profile&gt;
+```bash
+minikube profile -p <profile>
+```
+Delete Minikube profile &lt;profile&gt;
 ```bash
 minikube delete -p <profile>
 ```
