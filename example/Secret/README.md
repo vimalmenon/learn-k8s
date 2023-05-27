@@ -15,6 +15,33 @@ Check cluster status (Optional)
 minikube status -p k8s
 ```
 
+Make sure you are inside Secret folder
+```bash
+cd ./example/Secret
+```
+Create Namespace, ConfigMap and Pod
+```bash
+kubectl create -f ./example/01-Namespace.yaml
+kubectl create -f ./example/02-Secret.yaml
+kubectl create -f ./example/03-Pod.yaml
+```
+Kubectl get pods
+```bash
+kubectl get pods
+```
+Kubectl port forward 
+```bash
+kubectl port-forward  app-frontend-pod 3000:3000
+```
+Check the website in the browser
+[Frontend App](http://localhost:3000/)
+
+Create Namespace, ConfigMap and Pod
+```bash
+kubectl delete -f ./example/03-Pod.yaml
+kubectl delete -f ./example/02-Secret.yaml
+kubectl delete -f ./example/01-Namespace.yaml
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)

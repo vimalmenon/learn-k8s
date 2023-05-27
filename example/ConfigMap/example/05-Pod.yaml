@@ -4,6 +4,7 @@ metadata:
   name: app-frontend-pod
   labels:
     tier: frontend
+  namespace: k8s-app
 spec:
   containers:
   - name: frontend-app
