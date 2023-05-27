@@ -33,15 +33,46 @@ Port Forward to check the application
 ```bash
 kubectl port-forward app-frontend-pod 3000:3000
 ```
+Check ConfigMap values
+```bash
+kubectl describe configmap app-data
+```
 Check the website in the browser
 [Frontend App](http://localhost:3000/)
 
 
 Delete Pod, ConfigMap and Namespace
 ```bash
-kubectl delete -f ./example/01-Namespace.yaml
-kubectl delete -f ./example/02-ConfigMap.yaml
 kubectl delete -f ./example/03-Pod.yaml
+kubectl delete -f ./example/02-ConfigMap.yaml
+kubectl delete -f ./example/01-Namespace.yaml
+```
+#### Passing values in mounted drive as .env file
+Create Namespace, ConfigMap and Pod
+```bash
+kubectl create -f ./example/01-Namespace.yaml
+kubectl create -f ./example/04-ConfigMap.yaml
+kubectl create -f ./example/05-Pod.yaml
+```
+Check if the file exists in Pod
+```bash
+kubectl exec -it app-frontend-pod sh
+cd /test
+ls -ltra
+cat .env
+```
+```bash
+kubectl describe configmap app-data
+```
+Delete Pod, ConfigMap and Namespace
+```bash
+kubectl delete -f ./example/05-Pod.yaml
+kubectl delete -f ./example/04-ConfigMap.yaml
+kubectl delete -f ./example/01-Namespace.yaml
+```
+Delete cluster or Clean Up(Optional) 
+```bash
+minikube delete -p k8s
 ```
 ---
 ### Links

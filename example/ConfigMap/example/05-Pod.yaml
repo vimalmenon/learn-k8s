@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-frontend-pod
+  labels:
+    tier: frontend
+spec:
+  containers:
+  - name: frontend-app
+    image: vimalsmenon/app-frontend:latest
+    ports:
+    - containerPort: 3000
+    volumeMounts:
+    - name: app-data
+      mountPath: /test
+  volumes:
+    - name: app-data
+      configMap:
+        name: app-data
