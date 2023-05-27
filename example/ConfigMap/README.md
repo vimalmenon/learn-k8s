@@ -6,6 +6,7 @@
 
 ---
 ### Example
+#### Passing values in Yaml file
 Start minikube cluster with 2 worker nodes (Optional) 
 ```bash
 minikube start --nodes 3 -p k8s
@@ -18,7 +19,7 @@ Make sure you are inside ConfigMap folder
 ```bash
 cd ./example/ConfigMap
 ```
-Create Namespace, ConfigMap and Values from Pod
+Create Namespace, ConfigMap and Pod
 ```bash
 kubectl create -f ./example/01-Namespace.yaml
 kubectl create -f ./example/02-ConfigMap.yaml
@@ -36,7 +37,7 @@ Check the website in the browser
 [Frontend App](http://localhost:3000/)
 
 
-Delete Namespace, ConfigMap and Values from Pod
+Delete Pod, ConfigMap and Namespace
 ```bash
 kubectl delete -f ./example/01-Namespace.yaml
 kubectl delete -f ./example/02-ConfigMap.yaml
