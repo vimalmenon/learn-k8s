@@ -2,8 +2,8 @@
 
 ### Application
 Github Repo for learning K8S.
-* [Frontend](https://github.com/vimalmenon/k8s-frontend) - Sample frontend app
-* [Backend](https://github.com/vimalmenon/k8s-backend) - Sample backend app
+* [Frontend](https://github.com/vimalmenon/k8s-frontend)
+* [Backend](https://github.com/vimalmenon/k8s-backend)
 ---
 ### Pre Requisites
 * Need to have basic understanding of docker, container and images
@@ -23,11 +23,15 @@ Github Repo for learning K8S.
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
+* [Resources](https://github.com/vimalmenon/k8s-learn/tree/master/example/Resources)
 * Volume
     - [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
 ---
 ### Sample Project
 * K8S
+    * Resources
+    * Probes
+    * Scheduling
     * Volume
         - Local storage
             -  At pod level
@@ -49,7 +53,6 @@ Github Repo for learning K8S.
     * Deployment strategy
         - Blue Green deployment (Not Covered)
         - Canary Deployment (Not Covered)
-    * Resources (I have no Idea what this is)
     * More...
 ---
 ### Setting up FrontEnd App
