@@ -25,6 +25,9 @@ Github Repo used for learning K8S.
 * [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
 * [DaemonSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/DaemonSet)
 * [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
+* [Job](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
+* [CronJob](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
+
 ---
 ### Sample Project
 * K8S
@@ -49,8 +52,7 @@ Github Repo used for learning K8S.
         - ConfigMap
         - Secret
         - Mount Secrets / config
-    * CronJob
-    * Job
+
     * Helm
     * Service Mesh
     * Deployment strategy
