@@ -27,7 +27,7 @@ kubectl create -f ./example/02-Job.yaml
 ```
 List Jobs
 ```bash
-kubectl get Jobs -n k8s-app
+kubectl get jobs -n k8s-app
 ```
 
 Get pods

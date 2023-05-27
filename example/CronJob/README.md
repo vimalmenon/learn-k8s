@@ -13,6 +13,10 @@ Check cluster status (Optional)
 ```bash
 minikube status -p k8s
 ```
+Make sure you are inside CronJob folder
+```bash
+cd ./example/CronJob
+```
 Create Namespace and CornJob at same time
 ```bash
 kubectl create -f ./example
