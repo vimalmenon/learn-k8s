@@ -28,7 +28,6 @@ Github Repo used for learning K8S.
 ---
 ### Sample Project
 * K8S
-    * Namespace
     * Volume
         - Local storage
             -  At pod level
