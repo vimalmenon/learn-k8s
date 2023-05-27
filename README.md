@@ -12,10 +12,7 @@ Github Repo used for learning K8S.
 ### Pre Requisites and Software required
 ##### Pre Requisites
 * Need to have basic understanding of docker and images
-
-##### Software required
-* Docker
-
+* Need to have docket installed on the system
 ---
 ### Topics
 * [K8S Architecture](https://github.com/vimalmenon/k8s-learn/tree/master/example/K8S%20Architecture)
@@ -52,10 +49,6 @@ Github Repo used for learning K8S.
         * Statefull
             - Headless
             - StatefullSet
-    * Values
-        - ConfigMap
-        - Secret
-        - Mount Secrets / config
     * Helm
     * Service Mesh
     * Deployment strategy
