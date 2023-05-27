@@ -41,6 +41,10 @@ List pod under a namespace
 ```bash
 kubectl get pods -n k8s-app
 ```
+Switching to k8s-app namespace
+```bash
+kubectl config set-context --current --namespace=k8s-app 
+```
 Delete pod
 ```bash
 kubectl delete -f ./example/02-Pod.yaml
