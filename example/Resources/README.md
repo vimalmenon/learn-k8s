@@ -31,9 +31,15 @@ As you could see Pods are not getting assigned
 ```bash
 kubectl delete -f ./example/02-Pod.yaml
 ```
+let's start the pod with less memory
 ```bash
 kubectl create -f ./example/03-Pod.yaml
 ```
+Pods will be running now, now delete the pod
+```bash
+kubectl delete -f ./example/03-Pod.yaml
+```
+
 
 Quality of Service
 
