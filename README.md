@@ -56,28 +56,6 @@ Github Repo for learning K8S.
         - Canary Deployment (Not Covered)
     * More...
 ---
-### Setting up FrontEnd App
-Navigate inside the FrontEnd folder
-```bash
-cd App/FrontEnd
-```
-Build an image with a tag
-```bash
-docker build -tag front-end-app:0.0.0 .
-```
-Create a tag before pushing (This is compulsory)
-```bash
-docker tag front-end-app:0.0.0 vimalsmenon/front-end-app:0.0.0
-```
-Docker Login with username and password
-```bash
-docker login
-```
-Docker push
-```bash
-docker push vimalsmenon/front-end-app:0.0.0
-```
----
 ### Create a basic pods
 Minikube start with 2 nodes with name local-cluster
 ```bash
