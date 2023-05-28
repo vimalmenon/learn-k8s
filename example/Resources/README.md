@@ -31,6 +31,10 @@ As you could see Pods are not getting assigned
 ```bash
 kubectl delete -f ./example/02-Pod.yaml
 ```
+```bash
+kubectl create -f ./example/03-Pod.yaml
+```
+
 Quality of Service
 
 
@@ -38,4 +42,4 @@ Quality of Service
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (Secret)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
-* [Next Topic (LocalStorage)](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
+* [Next Topic (Resources)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Resources)
