@@ -39,11 +39,23 @@ minikube profile -p <profile>
 ```
 Minikube delete all
 ```bash
-minikube delete
+minikube delete --all
 ```
 Minikube list addons
 ```bash
 minikube addons list
+```
+Minikube start with Memory and CPU's
+```bash
+minikube start --memory 8000 --cpus 3 -p <profile>
+```
+Add worker node
+```bash
+minikube node add --worker -p <profile>
+```
+Delete worker node
+```bash
+minikube node delete <node-name> -p <profile>
 ```
 ---
 ### Links

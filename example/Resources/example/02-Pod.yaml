@@ -8,11 +8,11 @@ spec:
   - name: stress-test
     image: polinux/stress
     command: ["stress"]
-    args: ["--cpu", "2", "--vm", "1", "--vm-bytes", "IG", "--vm-hand", "1"]
+    args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "IG", "--vm-hand", "1"]
     resources:
       requests:
         cpu: "1"
-        memory: "10Gi"
-      limits:
-        cpu: "2"
-        memory: "15Gi"
+        memory: "4Gi"
+      # limits:
+      #   cpu: "2"
+      #   memory: "15Gi"

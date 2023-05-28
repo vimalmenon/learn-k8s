@@ -6,6 +6,31 @@
 
 ---
 ### Example
+Start minikube cluster with 1 worker nodes (Optional) 
+```bash
+minikube start --memory 3000 --nodes 2 -p k8s
+```
+Check cluster status (Optional) 
+```bash
+minikube status -p k8s
+```
+Make sure you are inside Job folder
+```bash
+cd ./example/Resources
+```
+
+Create Namespace and Pod
+```bash
+kubectl create -f ./example/01-Namespace.yaml
+kubectl create -f ./example/02-Pod.yaml
+```
+```bash
+kubectl get pods -n k8s-app   
+```
+As you could see Pods are not getting assigned
+```bash
+kubectl delete -f ./example/02-Pod.yaml
+```
 Quality of Service
 
 
