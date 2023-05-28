@@ -66,4 +66,4 @@ minikube delete -p k8s
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (ConfigMap)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
-* [Next Topic (LocalStorage)](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
+* [Next Topic (Resources)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Resources)

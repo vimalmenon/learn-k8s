@@ -40,8 +40,8 @@ Pods will be running now, now delete the pod
 kubectl delete -f ./example/03-Pod.yaml
 ```
 
-
-Quality of Service
+---
+#### Quality of Service
 
 
 ---
