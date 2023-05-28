@@ -27,9 +27,9 @@ Get all k8s object from --all-namespaces
 ```bash
 kubectl get all --all-namespaces
 ``` 
-Show the dashboard with Url
+Kubectl get nodes
 ```bash
-minikube dashboard --url
+kubectl get nodes
 ```
 ---
 ### Links

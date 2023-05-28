@@ -33,6 +33,10 @@ Delete Minikube profile &lt;profile&gt;
 ```bash
 minikube delete -p <profile>
 ```
+Show the dashboard with Url
+```bash
+minikube dashboard --url
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)

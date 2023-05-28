@@ -29,7 +29,8 @@ Github Repo for learning K8S.
 ---
 ### Sample Project
 * K8S
-    * Resources
+    * LimitRange
+    * ResourceQuota
     * Probes
     * Scheduling
     * Volume
