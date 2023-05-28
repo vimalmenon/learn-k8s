@@ -25,10 +25,6 @@ Stop Minikube with the profile &lt;profile&gt;
 ```bash
 minikube stop -p <profile>
 ```
-Switch to specific profile &lt;profile&gt;
-```bash
-minikube profile -p <profile>
-```
 Delete Minikube profile &lt;profile&gt;
 ```bash
 minikube delete -p <profile>
@@ -36,6 +32,18 @@ minikube delete -p <profile>
 Show the dashboard with Url
 ```bash
 minikube dashboard --url
+```
+Switch to specific profile &lt;profile&gt;
+```bash
+minikube profile -p <profile>
+```
+Minikube delete all
+```bash
+minikube delete
+```
+Minikube list addons
+```bash
+minikube addons list
 ```
 ---
 ### Links
