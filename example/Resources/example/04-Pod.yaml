@@ -8,7 +8,7 @@ spec:
     - name: stress-test
       image: polinux/stress
       command: ["stress"]
-      args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "4G", "--vm-hang", "1"]
+      args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "4G", "--vm-hang", "1.2"]
       resources:
         requests:
           cpu: "1"
