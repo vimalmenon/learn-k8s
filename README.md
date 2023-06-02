@@ -18,15 +18,16 @@ Github Repo for learning K8S.
 * [Deployment](https://github.com/vimalmenon/k8s-learn/tree/master/example/Deployment)
 * [DaemonSet](https://github.com/vimalmenon/k8s-learn/tree/master/example/DaemonSet)
 * [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
+* [Resources](https://github.com/vimalmenon/k8s-learn/tree/master/example/Resources)
+* [Probe](https://github.com/vimalmenon/k8s-learn/tree/master/example/Probe)
 * [Job](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
 * [CronJob](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
-* [Probe](https://github.com/vimalmenon/k8s-learn/tree/master/example/Probe)
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
-* [Resources](https://github.com/vimalmenon/k8s-learn/tree/master/example/Resources)
 * Volume
     - [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
+* Service
 ---
 ### Sample Project
 * K8S
