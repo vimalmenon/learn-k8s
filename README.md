@@ -20,6 +20,7 @@ Github Repo for learning K8S.
 * [Namespace](https://github.com/vimalmenon/k8s-learn/tree/master/example/Namespace)
 * [Job](https://github.com/vimalmenon/k8s-learn/tree/master/example/Job)
 * [CronJob](https://github.com/vimalmenon/k8s-learn/tree/master/example/CronJob)
+* [Probe](https://github.com/vimalmenon/k8s-learn/tree/master/example/Probe)
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
