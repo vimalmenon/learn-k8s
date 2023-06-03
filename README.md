@@ -27,7 +27,13 @@ Github Repo for learning K8S.
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
 * Volume
     - [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
-* Service
+* Services
+    - NodePort
+    - ClusterIp
+    - Ingress
+    - Ingress Controller
+    - Headless
+* Stateful Set
 ---
 ### Sample Project
 * K8S
