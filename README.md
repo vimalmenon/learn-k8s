@@ -32,6 +32,7 @@ Github Repo for learning K8S.
     - ClusterIp
     - Ingress
     - Ingress Controller
+    - Load Balancer
     - Headless
 * Stateful Set
 ---
