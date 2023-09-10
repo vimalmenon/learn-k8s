@@ -1,4 +1,4 @@
-SideCar container pattern
+SideCar Container Pattern
 * Sidecar
 * Ambassador
 * Adapter
