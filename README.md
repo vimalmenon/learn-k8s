@@ -25,8 +25,10 @@ Github Repo for learning K8S.
 * Data
     - [ConfigMap](https://github.com/vimalmenon/k8s-learn/tree/master/example/ConfigMap)
     - [Secret](https://github.com/vimalmenon/k8s-learn/tree/master/example/Secret)
+* [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
+    - Pod Storage
+    - Node Storage
 * Volume
-    - [LocalStorage](https://github.com/vimalmenon/k8s-learn/tree/master/example/LocalStorage)
     - Storage Class
     - Persistent Volume
     - Persistent Volume Claim
@@ -45,13 +47,6 @@ Github Repo for learning K8S.
     * ResourceQuota
     * Probes
     * Scheduling
-    * Volume
-        - Local storage
-            -  At pod level
-            -  At Node level
-        - Persistent volumes (Not Covered)
-        - Persistent volumes claim (Not Covered)
-        - Storage class (Not Covered)
     * Service
         - ClusterIp
         - NodePort

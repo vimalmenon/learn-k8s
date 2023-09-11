@@ -1,4 +1,20 @@
 SideCar Container Pattern
 * Sidecar
-* Ambassador
-* Adapter
+* Ambassador : This proxy network traffic service from once container to another
+* Adapter : Transform the main containers output
+
+SideCar container
+Init Container
+
+---
+pods restart policy
+
+---
+volume
+volumeMount
+persistance volume
+persistance volume Claim
+Directory
+DirectoryOrCreate
+File
+FileOrCreate
