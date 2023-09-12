@@ -7,7 +7,12 @@ SideCar container
 Init Container
 
 ---
+** Need to check
+
 pods restart policy
+Adhoc command in kubectl
+---
+kubectl rollout undo
 
 ---
 volume
@@ -18,3 +23,6 @@ Directory
 DirectoryOrCreate
 File
 FileOrCreate
+
+kubectl edit service
+kubectl top 
