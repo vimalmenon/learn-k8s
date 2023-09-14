@@ -31,6 +31,10 @@ Kubectl get nodes
 ```bash
 kubectl get nodes
 ```
+Get Cluster Info
+```sh
+kubectl cluster-info
+```
 ---
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)

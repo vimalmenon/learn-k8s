@@ -11,9 +11,17 @@ Init Container
 
 pods restart policy
 Adhoc command in kubectl
+Check Image status
 ---
 kubectl rollout undo
 
+
+CustomResourceDefinition
+ServiceAccount 
+    Admission controller
+    ServiceAccount Token
+    Role
+Admission control
 ---
 volume
 volumeMount
@@ -26,3 +34,44 @@ FileOrCreate
 
 kubectl edit service
 kubectl top 
+
+----------
+
+Nodes: Worker machine
+    Minions
+Cluster is multiple node put together
+Master: 
+Service Installed
+    API server          : FE for K8s service
+    ETCD                : Key Value Store
+    kubelet             : Agent on each node
+    Container Runtime   : Run Container
+    controller          : Brain behind orchastration
+    Scheduler           : Distributing Work load
+
+Master:
+    Container Runtime
+    API server
+    ETCD
+    Scheduler
+    Controller
+Worker:
+    Container Runtime
+    kubelet
+
+--------------
+
+CRI : Container runtime interface
+OCI: Open Container Initiative
+    ImageSpec   : How image should be build
+    Runtimespec : How the run time spec
+    Dockershim
+ContainerD
+    part of CNCF
+    cli is ctr
+    Ctr has limited feature only
+    alternate cli is nerdCli as ctr it's not user friendly
+    crictl is to used for k8s
+
+
+
