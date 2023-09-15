@@ -43,6 +43,15 @@ Delete cluster or Clean Up(Optional)
 minikube delete -p k8s
 ```
 
+---
+
+Replication Controller is older way
+ReplicaSet is newer way
+
+
+---
+command
+kubectl scale rs <replica-set-name> --replicas=5
 
 ---
 ### Links

@@ -81,6 +81,19 @@ kubectl get pods
 kubectl delete pod nginx
 -----
 Pod Status:
-    ContainerCreating
-    Running
+  Pending
+  Succeeded
+  ContainerCreating
+  Running
+  ErrImagePull
+  Failed
+  Unknown
+  ImagePullBackOff
+Pod state:
+  Waiting
+  Running
+  Terminated
 
+kubectl run redis --image-redis --dry-run=client -o yaml
+kubectl edit pod <pod-name>
+kubectl explain rs

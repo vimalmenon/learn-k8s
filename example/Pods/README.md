@@ -52,7 +52,21 @@ Delete cluster (Optional)
 minikube delete -p k8s
 ```
 ---
+
+*** Other Value
+port
+  - containerPort: 80
+restartPolicy
+  OnFailure
+  Always
+dnsPolicy
+ternimationGracePeriodSeconds
+
+
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)
 * [Previous Topic (Minikube)](https://github.com/vimalmenon/k8s-learn/tree/master/example/Minikube)
 * [Next Topic (ReplicaSet)](https://github.com/vimalmenon/k8s-learn/tree/master/example/ReplicaSet)
+
+
+
