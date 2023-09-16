@@ -97,3 +97,12 @@ Pod state:
 kubectl run redis --image-redis --dry-run=client -o yaml
 kubectl edit pod <pod-name>
 kubectl explain rs
+kubectl expose pod
+
+
+kubectl create serviceaccount <service-name>
+kubectl get serviceaccount
+kubectl create token <service-name>
+
+Need to revisit the token section
+Need to revisit the ServiceAccount

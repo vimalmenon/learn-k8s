@@ -43,6 +43,7 @@ Github Repo for learning K8S.
 ---
 ### Sample Project
 * K8S
+    * ServiceAccount
     * LimitRange
     * ResourceQuota
     * Probes
