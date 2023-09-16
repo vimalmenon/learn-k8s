@@ -145,8 +145,10 @@ Ready
 
 Rolling update is default deployment strategy
 kubectl set image <deployment> <container-name>
+kubectl create -f <file-name> --record
 kubectl rollout undo <deployment>
 kubectl rollout status <deployment>
+kubectl rollout history <deployment>
 kubectl rollout undo <deployment>
 Deployment strategy
     Recreate
