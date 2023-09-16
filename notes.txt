@@ -89,16 +89,18 @@ Pod Status:
   Failed
   Unknown
   ImagePullBackOff
+  CrashLoopBackoff
 Pod state:
   Waiting
   Running
   Terminated
+  OOMKilled
 
 kubectl run redis --image-redis --dry-run=client -o yaml
 kubectl edit pod <pod-name>
 kubectl explain rs
 kubectl expose pod
-
+kubectl replace
 
 kubectl create serviceaccount <service-name>
 kubectl get serviceaccount
@@ -106,3 +108,32 @@ kubectl create token <service-name>
 
 Need to revisit the token section
 Need to revisit the ServiceAccount
+
+----
+taints are applied to node
+toleration are applied to pod
+K8s set taint on master node by default, allowing no jobs to be scheduled on the master node\
+----
+
+Scheduler decide which node the pod should go to.
+OOM Memory kill
+
+
+kubectl label node <node-name>
+kubectl taint node <node-name>
+
+
+https://github.com/lucassha/CKAD-resources
+https://github.com/mmumshad/kubernetes-the-hard-way
+https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/
+
+Pod Lifecycle
+  Pending - Scheduler identify where to put the pod
+  ContainerCreating: Pulling image and creating Container
+  Running: Container is running
+
+
+PodScheduled
+initialized
+ContainersReady
+Ready
