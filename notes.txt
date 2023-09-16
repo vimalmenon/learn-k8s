@@ -141,3 +141,13 @@ PodScheduled
 initialized
 ContainersReady
 Ready
+
+
+Rolling update is default deployment strategy
+kubectl set image <deployment> <container-name>
+kubectl rollout undo <deployment>
+kubectl rollout status <deployment>
+kubectl rollout undo <deployment>
+Deployment strategy
+    Recreate
+    Rolling Update
