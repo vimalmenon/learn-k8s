@@ -133,6 +133,10 @@ Pod Lifecycle
   Running: Container is running
 
 
+kubectl top node
+kubectl top pod
+
+
 PodScheduled
 initialized
 ContainersReady
