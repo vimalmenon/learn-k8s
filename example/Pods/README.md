@@ -59,9 +59,13 @@ port
 restartPolicy
   OnFailure
   Always
+  Never
 dnsPolicy
 ternimationGracePeriodSeconds
 
+
+Restart policy is set to Always
+Threshold is set to 5
 
 ### Links
 * [Home](https://github.com/vimalmenon/k8s-learn)

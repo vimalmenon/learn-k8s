@@ -12,3 +12,4 @@ spec:
         command: ["ls",  "-ltra"]
       restartPolicy: Never
   backoffLimit: 1
+  parallelism: 3

@@ -153,3 +153,16 @@ kubectl rollout undo <deployment>
 Deployment strategy
     Recreate
     Rolling Update
+
+
+NodePort
+    Valid Range for NodePort is 30000 to 32767
+    ports:
+        - targetPort:
+          port
+          nodePort:
+    Algorithm: Random
+    this is connected to node for external use for testing
+ClusterIp
+    
+Loadbalancer
