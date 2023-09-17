@@ -162,7 +162,17 @@ NodePort
           port
           nodePort:
     Algorithm: Random
-    this is connected to node for external use for testing
+    this is connected to node for e xternal use for testing
 ClusterIp
-    
-Loadbalancer
+LoadBalancer
+
+Ingress
+    lvl 7 loadBalancer
+    IngressController
+    IngressResource
+
+
+Ingress: Incomming traffice
+Egress: Outgoing traffic
+
+Need to explore network policy

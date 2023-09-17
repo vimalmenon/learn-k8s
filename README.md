@@ -40,6 +40,7 @@ Github Repo for learning K8S.
     - Load Balancer
     - Headless
     - StatefulSet
+* Network Policy
 ---
 ### Sample Project
 * K8S
