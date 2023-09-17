@@ -172,7 +172,9 @@ Ingress
     IngressResource
 
 
-Ingress: Incomming traffice
+Ingress: Incoming traffic
 Egress: Outgoing traffic
 
 Need to explore network policy
+
+kubectl create token <service-account>
