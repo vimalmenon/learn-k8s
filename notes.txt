@@ -178,3 +178,8 @@ Egress: Outgoing traffic
 Need to explore network policy
 
 kubectl create token <service-account>
+
+
+kubectl auth can-i create deployment as <user>
+kubectl auth can-i delete nodes
+kubectl get pods --as <user>
