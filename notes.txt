@@ -183,3 +183,8 @@ kubectl create token <service-account>
 kubectl auth can-i create deployment as <user>
 kubectl auth can-i delete nodes
 kubectl get pods --as <user>
+kubectl convert -f <oldfile> --output-version <version-number>
+* This plugin needs to be installed
+kubectl proxy 8001&
+
+
