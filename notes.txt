@@ -50,6 +50,7 @@ Service Installed
     Scheduler           : Distributing Work load
 
 Master:
+    Cloud Controller manager
     Container Runtime
     API server
     ETCD
@@ -58,6 +59,7 @@ Master:
 Worker:
     Container Runtime
     kubelet
+    kube proxy
 
 --------------
 
