@@ -189,4 +189,6 @@ kubectl convert -f <oldfile> --output-version <version-number>
 * This plugin needs to be installed
 kubectl proxy 8001&
 
+qosClass: BestEffort
+
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
