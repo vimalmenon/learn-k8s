@@ -44,6 +44,9 @@ helm install <name> <repo-name>/<package> --set <property>
 ```sh
 helm upgrade <name> <repo-name>/<package> --set <property>=<value>
 ```
+```sh
+helm upgrade <name> <repo-name>/<package> --values=<value-file.yml>
+```
 ---
 #### Link to helm package
 https://artifacthub.io/
