@@ -1,7 +1,5 @@
 ## Helm
 
-
-
 ### List Repo
 ```sh
 helm repo list
@@ -12,13 +10,16 @@ helm repo list
 helm list
 ```
 
----
-#### Add Repo
-```sh
-helm repo add <repo-name> <repo-url>
 
 ---
+#### Add Repo and update
+```sh
+helm repo add <repo-name> <repo-url>
 ```
+```sh
+helm repo update
+```
+----
 ### Install and Uninstall a chart
 Install
 ```sh
