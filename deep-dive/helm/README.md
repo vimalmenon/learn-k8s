@@ -10,6 +10,10 @@ helm repo list
 helm list
 ```
 
+### Show default values for repo
+```sh
+helm show values <full-repo-name>
+```
 
 ---
 #### Add Repo and update
@@ -29,7 +33,17 @@ Uninstall
 ```sh
 helm uninstall <name>
 ```
+----
+#### Overwrite the value
+```sh
+helm install <name> <repo-name>/<package> --set <property>
+```
 
+---
+#### Update the value after installation
+```sh
+helm upgrade <name> <repo-name>/<package> --set <property>=<value>
+```
 ---
 #### Link to helm package
 https://artifacthub.io/
