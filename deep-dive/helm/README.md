@@ -7,18 +7,23 @@
 ```sh
 helm repo list
 ```
-
+---
+### List package installed
+```sh
+helm list
+```
 ---
 #### Add Repo
 ```sh
 helm repo add <repo-name> <repo-url>
 ```
-
-### Install a chart
+### Install  and uninstall a chart
 ```sh
-help install <name> <repo-name>/<package>
+helm install <name> <repo-name>/<package>
 ```
-
+```sh
+helm uninstall <name>
+```
 
 ---
 #### Link to helm package
