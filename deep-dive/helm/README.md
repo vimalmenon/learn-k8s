@@ -53,5 +53,15 @@ helm upgrade <name> <repo-name>/<package> --values=<value-file.yml>
 ```sh
 helm pull <repo-name>/<package> --untar=true
 ```
+
+#### Make yaml file
+```sh
+helm template <name> <repo-name>/<package> --values=<value-file.yml>
+```
+
+#### help create chart
+```sh
+helm create <chart-name> 
+```
 #### Link to helm package
 https://artifacthub.io/
