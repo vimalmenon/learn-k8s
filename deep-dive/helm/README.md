@@ -48,5 +48,10 @@ helm upgrade <name> <repo-name>/<package> --set <property>=<value>
 helm upgrade <name> <repo-name>/<package> --values=<value-file.yml>
 ```
 ---
+
+#### Pull the repository
+```sh
+helm pull <repo-name>/<package> --untar=true
+```
 #### Link to helm package
 https://artifacthub.io/
