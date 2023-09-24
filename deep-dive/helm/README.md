@@ -8,6 +8,7 @@ helm repo list
 ### List package installed
 ```sh
 helm list
+helm list -a
 ```
 
 ### Show default values for repo
@@ -65,6 +66,14 @@ helm create <chart-name>
 #### Makes yaml file from created chart
 ```sh
 helm template .
+```
+#### Install a repo
+```sh
+helm install <name> <directory-name>
+```
+#### Check if the template is valid
+```sh
+helm install <name>  --dry-run --debug  <directory-name>
 ```
 #### Link to helm package
 https://artifacthub.io/

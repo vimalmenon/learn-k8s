@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+type: ReplicaSet
+metadata:
+  name: replicas
+spec:
+  replica: 2
+  selector:
+    matchLabels:
+      name: some-app
+  template:
+    spec: 
+      metadata:
+        name: replicas
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 3000
+
+
+
+
+# Imperative command
+# Note: No Command available to create replicaset

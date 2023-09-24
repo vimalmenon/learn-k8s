@@ -203,3 +203,7 @@ docker rm $(docker ps -aq)
 
 Need to check what is command is about
 kubectl cluster-info
+
+
+Service account
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
