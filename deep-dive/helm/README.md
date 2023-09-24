@@ -58,10 +58,13 @@ helm pull <repo-name>/<package> --untar=true
 ```sh
 helm template <name> <repo-name>/<package> --values=<value-file.yml>
 ```
-
-#### help create chart
+#### helm create chart
 ```sh
 helm create <chart-name> 
+```
+#### Makes yaml file from created chart
+```sh
+helm template .
 ```
 #### Link to helm package
 https://artifacthub.io/

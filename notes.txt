@@ -192,9 +192,14 @@ kubectl proxy 8001&
 qosClass: BestEffort
 
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/
 
 snowflake server 
 Phoenix server
 
 Remove all the running container
 docker rm $(docker ps -aq)
+
+
+Need to check what is command is about
+kubectl cluster-info
