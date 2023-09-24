@@ -8,6 +8,7 @@ metadata:
     app: pod
 spec:
   restartPolicy: Always
+  serviceAccountName: test
   containers:
     - name: nginx
       image: nginx:latest
@@ -16,8 +17,6 @@ spec:
       args: []
       ports:
         - containerPort: 3000
-
-
 
 # Properties 
 # imagePullPolicy: Always | Never | IfNotPresent
