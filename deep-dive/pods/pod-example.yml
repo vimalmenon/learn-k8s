@@ -42,4 +42,5 @@ spec:
 # kubectl delete po pod-test -n test
 # kubectl get po pod-test -o yaml
 # kubectl exec pod-test -it -- bash
-# 
+# kubectl get pod -A
+# kubectl port-forward app-backend 4000:4000
