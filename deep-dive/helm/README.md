@@ -77,3 +77,6 @@ helm install <name>  --dry-run --debug  <directory-name>
 ```
 #### Link to helm package
 https://artifacthub.io/
+
+#### Link to Helm website
+https://helm.sh/docs/
