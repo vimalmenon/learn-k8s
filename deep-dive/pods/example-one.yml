@@ -16,3 +16,5 @@ spec:
         valueFrom:
           fieldRef:
             fieldPath: spec.nodeName
+
+# kubectl port-forward app-backend 4000:4000
