@@ -1,0 +1,6 @@
+app:
+  backend:
+    name: app-backend
+    image: vimalsmenon/app-backend
+    tag: yellow
+    port: 4000

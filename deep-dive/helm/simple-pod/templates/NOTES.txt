@@ -1,1 +1,10 @@
-1 Create the simple pod
+---  ******************* ---
+Below are deployment detail
+
+---  Start ---
+Pods Deployed
+Name: {{ .Values.app.backend.name }}
+Image: {{ .Values.app.backend.image }}
+Tag: {{ .Values.app.backend.tag }}
+Port: {{ .Values.app.backend.port }}
+---  End ---
