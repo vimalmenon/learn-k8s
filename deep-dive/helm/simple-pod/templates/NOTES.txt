@@ -1,10 +1,15 @@
 ---  ******************* ---
 Below are deployment detail
 
----  Start ---
-Pods Deployed
+---  Pods Deployed ---
 Name: {{ .Values.app.backend.name }}
 Image: {{ .Values.app.backend.image }}
 Tag: {{ .Values.app.backend.tag }}
 Port: {{ .Values.app.backend.port }}
+Namespace: {{ .Values.app.namespace }}
+labels:
+  env: {{ .Values.env | quote}}
+{{- range $k, $v :=  .Values.app.backend.labels }}
+  {{ $k }}: {{ $v | quote}}
+{{- end }}
 ---  End ---

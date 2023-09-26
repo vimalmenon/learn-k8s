@@ -205,5 +205,9 @@ Need to check what is command is about
 kubectl cluster-info
 
 
+What is endpoint slice?
+
+
+
 Service account
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/

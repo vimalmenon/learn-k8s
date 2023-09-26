@@ -3,6 +3,12 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: {{ .Values.app.backend.name }}
+  namespace: {{ .Values.app.namespace }}
+  labels:
+    env: {{ .Values.env | quote}}
+  {{- range $k, $v :=  .Values.app.backend.labels }}
+    {{ $k }}: {{ $v | quote}}
+  {{- end }}
 spec:
   containers:
     - name: app-pod
