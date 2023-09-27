@@ -34,6 +34,10 @@ Uninstall
 ```sh
 helm uninstall <name>
 ```
+Dry Run
+```sh
+helm install <name> --dry-run
+```
 ----
 #### Overwrite the value
 ```sh
@@ -54,6 +58,9 @@ helm upgrade <name> <repo-name>/<package> --values=<value-file.yml>
 ```sh
 helm pull <repo-name>/<package> --untar=true
 ```
+
+
+
 
 #### Make yaml file
 ```sh

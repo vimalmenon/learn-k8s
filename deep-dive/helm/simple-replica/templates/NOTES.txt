@@ -1,0 +1,16 @@
+---  ******************* ---
+Below are deployment detail
+
+---  ReplicaSet Deployed ---
+Name: {{ .Values.app.replica.backend.name }}
+Image: {{ .Values.app.replica.backend.image }}
+Tag: {{ .Values.app.replica.backend.tag }}
+Namespace: {{ .Values.app.namespace }}
+Replicas: {{ .Values.app.replica.replicas }}
+Port: {{ .Values.app.replica.backend.port }}
+labels:
+  env: {{ .Values.env | quote}}
+{{- range $k, $v :=  .Values.app.replica.labels }}
+  {{ $k }}: {{ $v | quote}}
+{{- end }}
+---  End ---

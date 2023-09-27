@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: {{ .Values.app.replica.backend.name }}
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.replica.replicas }}
+  selector:
+    matchLabels:
+      name: test
+  template:
+    metadata:
+      name: pod-{{ .Values.app.replica.backend.name }}
+      labels:
+        name: test
+    spec:
+      containers:
+        - name: {{ .Values.app.replica.backend.name }}
+          image: {{ .Values.app.replica.backend.image }}:{{ .Values.app.replica.backend.tag }}
+          ports:
+            - containerPort: {{ .Values.app.replica.backend.port }}
+  
