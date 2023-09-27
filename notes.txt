@@ -207,6 +207,8 @@ kubectl cluster-info
 
 What is endpoint slice?
 
+Port-forward is only for pods
+
 
 
 Service account
