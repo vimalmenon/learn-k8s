@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.app.deployment.backend.name }}
+  labels:
+    app: deployment
+  namespace: local
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: test
+  template:
+      metadata:
+        name: pod-{{ .Values.app.deployment.backend.name }}
+        labels:
+          app: test
+      spec:
+        containers:
+        - name: nginx
+          image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag }}
+          
+
