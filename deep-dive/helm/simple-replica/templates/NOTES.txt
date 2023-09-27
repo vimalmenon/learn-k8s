@@ -14,3 +14,7 @@ labels:
   {{ $k }}: {{ $v | quote}}
 {{- end }}
 ---  End ---
+
+---  Notes ---
+No Command available to create ReplicaSet
+---  End ---
