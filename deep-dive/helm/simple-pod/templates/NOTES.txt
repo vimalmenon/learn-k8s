@@ -13,3 +13,7 @@ labels:
   {{ $k }}: {{ $v | quote}}
 {{- end }}
 ---  End ---
+
+---  Imperative command ---
+kubectl run <name> --image <image> --replicas <replicas>
+---  End ---
