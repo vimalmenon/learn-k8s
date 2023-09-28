@@ -1,0 +1,25 @@
+---  ******************* ---
+Below are deployment detail
+
+---  Service Detail ---
+
+---  End ---
+
+---  Deployment Detail ---
+Name: {{ .Values.app.deployment.backend.name }}
+Image: {{ .Values.app.deployment.backend.image }}
+Tag: {{ .Values.app.deployment.backend.tag }}
+Namespace: {{ .Values.app.namespace }}
+Replicas: {{ .Values.app.deployment.replicas }}
+Port: {{ .Values.app.deployment.backend.port }}
+labels:
+  env: {{ .Values.env | quote}}
+{{- range $k, $v :=  .Values.app.deployment.labels }}
+  {{ $k }}: {{ $v | quote}}
+{{- end }}
+---  End ---
+
+
+---  Notes ---
+kubectl create deploy <name> --image <image> --replicas <replicas>
+---  End ---

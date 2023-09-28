@@ -206,10 +206,16 @@ kubectl cluster-info
 
 
 What is endpoint slice?
+Need to check on expose command
 
-Port-forward is only for pods
-
+Port-forward can be done for all the service 
+kubectl port-forward deployment/mongo 28015:27017
+kubectl port-forward replicaset/mongo-75f59d57f4 28015:27017
+kubectl port-forward service/mongo 28015:27017
 
 
 Service account
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+
+
+https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_expose/
