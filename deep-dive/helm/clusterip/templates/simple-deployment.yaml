@@ -2,25 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.app.deployment.backend.name }}
-  labels:
-    app: deployment
-  namespace: local
+  name: {{ .Values.app.deployment.name }}
+  namespace: {{ .Values.app.namespace }}
+  metadata:
+    label : test
 spec:
   replicas: {{ .Values.app.deployment.replicas }}
   selector:
     matchLabels:
-      app: test
+      name: pod-test
   template:
-      metadata:
-        name: pod-{{ .Values.app.deployment.backend.name }}
-        labels:
-          app: test
-      spec:
-        containers:
-        - name: {{ .Values.app.deployment.backend.name }}
+    metadata:
+      labels: 
+        name: pod-test
+    spec:
+      containers:
+        - name : {{ .Values.app.deployment.backend.name }}
           image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag }}
           ports:
             - containerPort: {{ .Values.app.deployment.backend.port }}
-          
-
