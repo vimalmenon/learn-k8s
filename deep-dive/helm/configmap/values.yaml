@@ -3,7 +3,12 @@ app:
   namespace: local
   service:
     type: ClusterIp
-
+  configMap :
+    name: simple-config
+    data:
+      app: "app-api"
+      appVersion: "0.0.0"
+      testing: "testing"
   deployment:
     name: app-api
     replicas: 3
