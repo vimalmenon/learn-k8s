@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Values.app.deployment.name }}
+  name: {{ .Values.app.deployment.name}}
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+    {{- range $key, $val := .Values.app.deployment.labels}}
+        {{$key}}: {{$val}}
+    {{- end}}
+  template:
+    metadata:
+        labels:
+        {{- range $key, $val := .Values.app.deployment.labels}}
+            {{$key}}: {{$val}}
+        {{- end}}
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag }}
+        ports:
+            - containerPort: {{ .Values.app.deployment.backend.port }}
+        envFrom:
+        - configMapRef:
+            name: simple-configmap

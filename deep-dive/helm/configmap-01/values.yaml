@@ -1,0 +1,22 @@
+env: dev
+app:
+  namespace: local
+  service:
+    type: ClusterIp
+  configMap :
+    name: simple-config
+    data:
+      app: "app-api"
+      appVersion: "0.0.0"
+      testing: "testing"
+  deployment:
+    name: app-api
+    replicas: 3
+    labels:
+      app: api
+      tire: backend
+    backend:
+      name: app-api
+      image: vimalsmenon/app-backend
+      tag: yellow
+      port: 4000

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simple-configmap
+  namespace: {{ .Values.app.namespace }}
+data:
+{{- range $key, $val := .Values.app.configMap.data}}
+  {{$key}}: {{$val}}
+{{- end}}
+  test: test
