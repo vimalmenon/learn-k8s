@@ -19,9 +19,8 @@
 #       - name: {{ .Values.app.deployment.backend.name}}
 #         image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
 #         volumeMounts:
-#           - name: cache-storage
-#             mountPath: /storage
+#         - name: cache-pvc
+#           mountPath: /etc
 #       volumes:
-#         - name: cache-storage
+#         - name: cache-pvc
 #           emptyDir: {}
-        
