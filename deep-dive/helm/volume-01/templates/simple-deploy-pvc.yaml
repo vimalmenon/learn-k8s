@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy-pvc
+  name: simple-deploy-pvc
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-deploy-pvc
+  template:
+    metadata:
+      labels:
+        app: simple-deploy-pvc
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        volumeMounts:
+          - name: cache-storage
+            mountPath: /storage
+      volumes:
+        - name: cache-storage
+          emptyDir: {}
+        

@@ -1,0 +1,33 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   labels:
+#     app: simple-deploy-hostname-pvc
+#   name: simple-deploy-hostname-pvc
+#   namespace: {{ .Values.app.namespace }}
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: simple-deploy-hostname-pvc
+#   strategy: {}
+#   template:
+#     metadata:
+#       labels:
+#         app: simple-deploy-hostname-pvc
+#     spec:
+#       containers:
+#       - name: {{ .Values.app.deployment.backend.name}}
+#         image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag }}
+#         volumeMounts:
+#           - name : hostpath-pvc
+#             mountPath: /hostpath
+#           - name: cache-pvc
+#             mountPath: /cache
+#       volumes:
+#       - name: hostpath-pvc
+#         hostPath:
+#           path: /dir
+#           type: DirectoryOrCreate
+#       - name: cache-pvc
+#         emptyDir: {}

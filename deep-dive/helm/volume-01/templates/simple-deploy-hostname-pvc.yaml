@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy-hostname-pvc
+  name: simple-deploy-hostname-pvc
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-deploy-hostname-pvc
+  template:
+    metadata:
+      labels:
+        app: simple-deploy-hostname-pvc
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        volumeMounts:
+        - name: cache-pvc
+          mountPath: /cache
+        - name: hostname-pvc
+          mountPath: /hostname
+        env:
+        - name: SOME_KEY
+          value: "This is some key"
+      volumes:
+      - name: cache-pvc
+        emptyDir: {}
+      - name: hostname-pvc
+        hostPath:
+          path: /volume/dir
+          type: DirectoryOrCreate
