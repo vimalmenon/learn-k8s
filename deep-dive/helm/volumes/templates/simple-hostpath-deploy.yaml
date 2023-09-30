@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: simple-hostpath-deploy
+  name: simple-hostpath-deploy
+  namespace: {{ .Values.app.namespace}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-hostpath-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simple-hostpath-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        volumeMounts:
+          - name: hostpath-volume
+            mountPath: /dir
+      volumes:
+      - name: hostpath-volume
+        hostPath:
+          path: /app/volume
+          type: DirectoryOrCreate
+        

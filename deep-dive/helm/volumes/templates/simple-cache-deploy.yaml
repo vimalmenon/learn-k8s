@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy
+  name: simple-cache-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: simple-deploy
+  template:
+    metadata:
+      labels:
+        app: simple-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        ports:
+          - containerPort: {{ .Values.app.deployment.backend.port }}
+        env:
+          - name: INLINE
+            value: "this is inline from yaml"
+          - name: CONFIG_KEY_VALUE
+            valueFrom:
+              configMapKeyRef:
+                name : config-map-key
+                key : CONFIG_KEY
+        envFrom:
+        - configMapRef:
+            name: config-map-key
+        volumeMounts:
+          - name: cache-volume
+            mountPath: /dir
+      volumes:
+        - name: cache-volume
+          emptyDir: {}

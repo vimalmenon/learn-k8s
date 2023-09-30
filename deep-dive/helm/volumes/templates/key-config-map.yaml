@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-map-key
+  namespace: {{ .Values.app.namespace }}
+data:
+  CONFIG_KEY: "this is from config map key"
+  OTHER_KEY: "this is other key"
+  MORE_KEY: "this is more key"

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pv-claim-2g
+  namespace: {{ .Values.app.namespace }}
+spec:
+  storageClassName: simple-5gi-pv
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+    limits:
+        storage: 2.2Gi

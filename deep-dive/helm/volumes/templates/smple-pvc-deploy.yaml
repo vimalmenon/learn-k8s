@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-pvc-deploy
+  name: simple-pvc-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-pvc-deploy
+  template:
+    metadata:
+      labels:
+        app: simple-pvc-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        volumeMounts:
+        - name: pvc-storage
+          mountPath: /dir
+      volumes:
+      - name: pvc-storage
+        persistentVolumeClaim:
+          claimName: pv-claim-1g
+      - name: pvc-2g-storage
+        persistentVolumeClaim:
+          claimName: pv-claim-2g
