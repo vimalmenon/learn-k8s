@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mount-config-map
+  namespace: {{ .Values.app.namespace }}
+data:
+  FIRST_KEY: "this is first key"

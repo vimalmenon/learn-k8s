@@ -20,14 +20,19 @@ spec:
       - name: {{ .Values.app.deployment.backend.name}} 
         image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
         volumeMounts:
-          - name: cache-pvc
-            mountPath: /cache
-          - name: persistance-pvc
-            mountPath: /persistance
-      volumes:
         - name: cache-pvc
-          emptyDir: {}
+          mountPath: /cache
         - name: persistance-pvc
-          persistanceVolumeClaim:
-            claimName: pv-claim-1g
+          mountPath: /persistance
+        - name: configmap-pvc
+          mountPath: /configmap
+      volumes:
+      - name: cache-pvc
+        emptyDir: {}
+      - name: persistance-pvc
+        persistanceVolumeClaim:
+          claimName: pv-claim-1g
+      - name: configmap-pvc
+        configMap:
+          name: mount-config-map
         
