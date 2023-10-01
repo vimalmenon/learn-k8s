@@ -21,16 +21,22 @@ spec:
         imagePullPolicy: Always
         env:
           - name: APP_DELAY
-            value: "5000"
+            value: "500000"
           - name: NODE_NAME
             valueFrom:
               fieldRef:
                 fieldPath: spec.nodeName
         readinessProbe:
           httpGet:
-            path: "/health"
+            path: /health
             port: 4000
-          initialDelaySeconds: 15
+          initialDelaySeconds: 30
+          periodSeconds: 20
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 4000
+          failureThreshold: 30
           periodSeconds: 20
         volumeMounts:
           - name: storage
