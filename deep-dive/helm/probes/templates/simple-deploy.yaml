@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy
+  name: simple-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: simple-deploy
+  template:
+    metadata:
+      labels:
+        app: simple-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        imagePullPolicy: Always
+        env:
+          - name: APP_DELAY
+            value: "5000"
+          - name: NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+        readinessProbe:
+          httpGet:
+            path: "/health"
+            port: 4000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        volumeMounts:
+          - name: storage
+            mountPath: /logs
+      volumes:
+      - name: storage
+        persistentVolumeClaim:
+          claimName:  pv-claim-1g
