@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tolerance-deploy
+  name: tolerance-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tolerance-deploy
+  template:
+    metadata:
+      labels:
+        app: tolerance-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "special"
+        effect: "NoExecute"
+        

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deply
+  name: simple-deply
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: simple-deply
+  template:
+    metadata:
+      labels:
+        app: simple-deply
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        
