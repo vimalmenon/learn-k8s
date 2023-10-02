@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: green-deployment
+    app.kubernetes.io/managed-by: Helm
+  name: canary-service
+  namespace: {{ .Values.app.namespace }}
+spec:
+  ports:
+  - port: 4000
+    protocol: TCP
+    targetPort: 4000
+    nodePort: 30000
+  selector:
+    app: app-deployment
+    env: {{ .Values.app.env }}
+  type: NodePort
+status:
+  loadBalancer: {}

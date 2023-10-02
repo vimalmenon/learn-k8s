@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: green-deployment
+  name: green-deployment
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-deployment
+      env: {{ .Values.app.env }}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: app-deployment
+        env: {{ .Values.app.env }}
+    spec:
+      containers:
+      - name: {{ .Values.app.backend.name }}
+        image: {{ .Values.app.backend.image }}:green
