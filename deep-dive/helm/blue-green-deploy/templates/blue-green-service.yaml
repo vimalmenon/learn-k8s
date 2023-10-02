@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: blue-deploy
+    app.kubernetes.io/managed-by: Helm
+    env: local
+    type: blue
+  name: blue-green-deploy
+  namespace: local
+spec:
+  ports:
+  - port: 4000
+    protocol: TCP
+    targetPort: 4000
+    nodePort: 30000
+  selector:
+    app: blue-deploy
+    type: blue
+  type: NodePort
+status:
+  loadBalancer: {}

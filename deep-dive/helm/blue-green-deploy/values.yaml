@@ -1,0 +1,8 @@
+app:
+  env: local
+  namespace: local
+  backend:
+    name: app-api
+    image: vimalsmenon/app-backend
+    tag: red
+    replicas: 3

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: blue-deploy
+    env: {{ .Values.app.env }}
+    type: blue
+  name: blue-deploy
+  namespace: local
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: blue-deploy
+      type: blue
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: blue-deploy
+        type: blue
+    spec:
+      containers:
+      - name: {{ .Values.app.backend.name }}
+        image: {{ .Values.app.backend.image }}:blue
+        resources: {}
+status: {}

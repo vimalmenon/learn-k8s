@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: green-deploy
+    env: {{ .Values.app.env }}
+    type: green
+  name: green-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: green-deploy
+      type: green
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: green-deploy
+        type: green
+    spec:
+      containers:
+      - name: {{ .Values.app.backend.name }}
+        image: {{ .Values.app.backend.image }}:green
+        volumeMounts:
+          - name: cache-volume
+            mountPath: /logs
+      volumes:
+      - name: cache-volume
+        emptyDir: {}
