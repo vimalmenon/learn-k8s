@@ -219,3 +219,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-accou
 
 
 https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_expose/
+
+
+Testing Image to use
+wernight/kubectl

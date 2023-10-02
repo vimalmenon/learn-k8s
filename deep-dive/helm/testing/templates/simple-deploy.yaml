@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: simple-deploy
+    env: {{ .Values.env }}
+  name: simple-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.backend.replicas }}
+  selector:
+    matchLabels:
+      app: simple-deploy
+      env: {{ .Values.env }}
+  template:
+    metadata:
+      labels:
+        app: simple-deploy
+        env: {{ .Values.env }}
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag }}
+        volumeMounts:
+        - name: cache-vol
+          mountPath: /logs
+      volumes:
+      - name: cache-vol
+        emptyDir: {}

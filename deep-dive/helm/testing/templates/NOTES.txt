@@ -1,0 +1,20 @@
+---  ******************* ---
+App Detail
+
+---  Namespace Detail ---
+Namespace: {{ .Values.app.namespace }}
+---  End ---
+
+---  Deployment Detail ---
+Name: {{ .Values.app.deployment.backend.name }}
+Namespace: {{ .Values.app.namespace }}
+Image: {{ .Values.app.deployment.backend.image }}
+Tag: {{ .Values.app.deployment.backend.tag }}
+Replicas: {{ .Values.app.deployment.backend.replicas }}
+---  End ---
+
+---  Service Detail ---
+Type: {{ .Values.app.service.type }}
+Namespace: {{ .Values.app.namespace }}
+Port: {{ .Values.app.service.nodePort }}
+---  End ---

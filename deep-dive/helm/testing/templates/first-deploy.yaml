@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: first-deploy
+    env: {{ .Values.env }}
+    type: blue
+  name: first-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.backend.replicas }}
+  selector:
+    matchLabels:
+      app: first-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: first-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag }}
+        env:
+        - name: APP_TYPE
+          value: blue
+        volumeMounts:
+        - name: cache-vol
+          mountPath: /logs
+      volumes:
+      - name: cache-vol
+        emptyDir: {}
