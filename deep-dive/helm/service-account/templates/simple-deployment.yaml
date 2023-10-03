@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deployment
+  name: simple-deployment
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-deployment
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simple-deployment
+    spec:
+      containers:
+      - name: app-api
+        image: vimalsmenon/app-backend:blue
+        

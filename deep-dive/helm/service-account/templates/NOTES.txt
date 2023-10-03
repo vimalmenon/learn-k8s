@@ -1,0 +1,8 @@
+This is service account
+
+
+---  Notes ---
+kubectl create token <service-account>
+---  End ---
+
+https://kubernetes.io/docs/reference/using-api/api-concepts/
