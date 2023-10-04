@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy
+  name: simple-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.backend.replicas }}
+  selector:
+    matchLabels:
+      app: simple-deploy
+  template:
+    metadata:
+      labels:
+        app: simple-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name }}
+        image: {{ .Values.app.deployment.backend.image }}:{{ .Values.app.deployment.backend.tag}}
+        imagePullPolicy: Always
+        env:
+          - name: API_KEY
+            value: "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhuSHVfYnRWcEFrYTZmcVBmN2hHMlBCNi1KNEpJV0V0T1pWb0ZfbXhNZUkifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk2NDYyNjM3LCJpYXQiOjE2OTY0NTkwMzcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJsb2NhbCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJwb2QtbGlzdGVyIiwidWlkIjoiZDQzY2FlNDUtZWM4OS00MDYwLWIzZTktZDhjZjRjODVkMjNlIn19LCJuYmYiOjE2OTY0NTkwMzcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpsb2NhbDpwb2QtbGlzdGVyIn0.M36eJxyF6FoK6LuR1dYyhXTXZQiBHKhHg2rSkHfqGyt1FQNpmzZ-J8px1Z8VvVxOTgLthHthsIe8dwkt3hUwRjKL5L7K5MOBbKDGJ4n1ffkQBDcBCXt9AAjjB3Bk3Lh8Ls3f2ydRUgTw_Oi_8eMxgJq4K6-E6-TlZVK781Cn8nARECN-SVpvl0gmFNKvSIdRNF4t8h5jdHp7VsZMyRhBjYDeaxXELTSOYz3gJ_CSAzK_uBAcVzTFRH20awfbNlaLW_vcBw-MM8revMoep2DH1TjZDD66YvTKx_M-nkao9C4NSJjZ6oyMtxYLGkhahzOq30qFNplvMUIlJOZL5GobqQ"
