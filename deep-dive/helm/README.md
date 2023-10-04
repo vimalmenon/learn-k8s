@@ -87,3 +87,22 @@ https://artifacthub.io/
 
 #### Link to Helm website
 https://helm.sh/docs/
+
+
+#### Pending topics
+- Network Policy
+- AutoScaling
+- Ingress
+- Jobs and Cron Jobs
+- Roles and Role binding
+- Cluster Role and Role Binding
+- Metrics
+- LimitRange
+- ResourceQuota
+- ServiceAccount
+
+- Custom Column
+- Jsonpath
+
+- Vim More
+- Navigation through bash
