@@ -1,0 +1,13 @@
+---
+env: local
+app:
+  namespace: local
+  deployment:
+    backend:
+      name: app-api
+      image: vimalsmenon/app-backend
+      tag: red
+      replicas: 3
+  service:
+    type: NodePort
+    nodePort: 30000

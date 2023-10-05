@@ -94,15 +94,19 @@ https://helm.sh/docs/
 - AutoScaling
 - Ingress
 - Jobs and Cron Jobs
-- Roles and Role binding
 - Cluster Role and Role Binding
 - Metrics
 - LimitRange
 - ResourceQuota
-- ServiceAccount
+- NodeAffinity
+- NodeSelector
 
 - Custom Column
 - Jsonpath
 
 - Vim More
 - Navigation through bash
+
+Finished
+- ServiceAccount
+- Roles and Role binding

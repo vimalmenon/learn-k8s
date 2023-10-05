@@ -1,0 +1,19 @@
+---  ******************* ---
+App Detail
+
+---  Namespace Detail ---
+Namespace: {{ .Values.app.namespace }}
+---  End ---
+
+---  Deployment Detail ---
+Name: {{ .Values.app.deployment.backend.name }}
+Namespace: {{ .Values.app.namespace }}
+Image: {{ .Values.app.deployment.backend.image }}
+Tag: {{ .Values.app.deployment.backend.tag }}
+Replicas: {{ .Values.app.deployment.backend.replicas }}
+---  End ---
+
+---  Service Detail ---
+minikube dashboard -p local
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+---  End ---
