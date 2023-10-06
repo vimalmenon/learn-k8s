@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: orange-deploy
+  name: orange-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-api-deployment
+  template:
+    metadata:
+      labels:
+        app: app-api-deployment
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:orange
+        

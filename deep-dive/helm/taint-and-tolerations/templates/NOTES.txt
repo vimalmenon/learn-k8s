@@ -22,4 +22,6 @@ kubectl taint nodes local-m02 app=special:NoExecute
 kubectl taint nodes local-m02 app=special:NoExecute-
 kubectl taint nodes local-m02 app=special:NoSchedule
 kubectl taint nodes local-m02 app=special:NoSchedule-
+kubectl taint nodes local-m02 app=special:PreferNoSchedule
+kubectl taint nodes local-m02 app=special:PreferNoSchedule-
 ---  End ---

@@ -92,14 +92,19 @@ https://helm.sh/docs/
 #### Pending topics
 - Network Policy
 - AutoScaling
+    - HPA
+    - VPA
+    - CA
 - Ingress
 - Jobs and Cron Jobs
 - Cluster Role and Role Binding
 - Metrics
 - LimitRange
 - ResourceQuota
-- NodeAffinity
 - NodeSelector
+- NodeAffinity
+- PodAffinity
+- PodAntiAffinity
 
 - Custom Column
 - Jsonpath
@@ -110,3 +115,9 @@ https://helm.sh/docs/
 Finished
 - ServiceAccount
 - Roles and Role binding
+
+
+need to check what it does
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /$1
+    create default backend
