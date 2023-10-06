@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: orange-deploy
+  name: orange-deploy
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: {{ .Values.app.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: orange-deploy
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: orange-deploy
+    spec:
+      containers:
+      - name: {{ .Values.app.deployment.backend.name}}
+        image: {{ .Values.app.deployment.backend.image}}:orange
+        resources:
+          requests:
+            memory: 120Mi
+            cpu: 10m
+          limits:
+            memory: 120Mi
+            cpu: 10m
+      priorityClassName: high
+        

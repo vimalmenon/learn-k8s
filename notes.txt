@@ -228,3 +228,10 @@ wernight/kubectl
 https://www.youtube.com/@PavanKumarAleti/videos
 https://github.com/aleti-pavan/ckad-practice-questions/tree/main/content/1
 https://unofficial-kubernetes.readthedocs.io/en/latest/
+
+
+What is list
+https://kubernetes.io/docs/concepts/policy/resource-quotas/
+
+Need to check ResourceQuota again
+
