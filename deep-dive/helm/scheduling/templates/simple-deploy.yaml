@@ -1,0 +1,32 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   labels:
+#     app: simple-deploy
+#   name: simple-deploy
+#   namespace: {{ .Values.app.namespace }}
+# spec:
+#   replicas: {{ .Values.app.deployment.replicas }}
+#   selector:
+#     matchLabels:
+#       app: simple-deploy
+#   strategy: {}
+#   template:
+#     metadata:
+#       labels:
+#         app: simple-deploy
+#     spec:
+#       # nodeName: local
+#       # nodeSelector:
+#       #   app: api
+#       affinity:
+#         nodeAffinity:
+#           requiredDuringSchedulingIgnoredDuringExecution:
+#             nodeSelectorTerms:
+#             - matchExpressions:
+#               - key: value
+#                 operator: Lt
+#                 values: ["8"]
+#       containers:
+#       - name: {{ .Values.app.deployment.backend.name}}
+#         image: {{ .Values.app.deployment.backend.image}}:orange

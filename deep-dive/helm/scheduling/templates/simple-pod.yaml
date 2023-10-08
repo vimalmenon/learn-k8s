@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - name: {{ .Values.app.deployment.backend.name}}
+    image: {{ .Values.app.deployment.backend.image}}:orange
+    ports:
+    - containerPort: 4000
+  nodeName: local
+  
