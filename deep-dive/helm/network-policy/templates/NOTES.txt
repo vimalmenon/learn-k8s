@@ -1,0 +1,7 @@
+This is Network Policy
+
+
+
+--- Command ---
+minikube start -n 3 -p local --cni calico 
+---     End ---

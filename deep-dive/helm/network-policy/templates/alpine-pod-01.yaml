@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: alpine-pod-01
+  name: alpine-pod-01
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - name: {{ .Values.app.deployment.backend.name}}
+    image: {{ .Values.app.deployment.backend.image}}:network
+    imagePullPolicy: Always
+    env:
+    - name: POD_IP
+      valueFrom:
+        fieldRef:
+          fieldPath: status.podIP

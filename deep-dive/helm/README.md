@@ -105,6 +105,7 @@ https://helm.sh/docs/
 - NodeAffinity
 - PodAffinity
 - PodAntiAffinity
+- Prometheus and grafana
 
 - Custom Column
 - Jsonpath
