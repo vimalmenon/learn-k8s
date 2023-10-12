@@ -1,0 +1,7 @@
+Practice 01
+
+--- Start ---
+minikube start -n 3 -p local --cni calico
+k create ns local --dry-run=client -oyaml
+k run nginx --image nginx -n local --dry-run=client -oyaml
+--- END ---
