@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: simple-pod-with-node-selector
+  name: simple-pod-with-node-selector
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - image: nginx
+    name: {{ .Values.app.deployment.name }}
+  nodeSelector:
+    app: special
