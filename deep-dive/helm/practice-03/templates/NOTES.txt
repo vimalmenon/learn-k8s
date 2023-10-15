@@ -1,0 +1,11 @@
+This is testing of label
+
+--- Start ---
+k label node local-m02 app=special
+k label node local-m02 app-
+
+k create ns local --dry-run=client -oyaml > namespace.yaml
+k run app-api -n local --image nginx --dry-run=client -o yaml > app-api.yaml
+k create svc nodeport simple-nodeport -n local --tcp=4000:4000 --dry-run=client -o yaml
+k get svc -l "env=local,app=simple-nodeport" -n local
+--- End ---
