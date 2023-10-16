@@ -1,0 +1,6 @@
+--- Start Script ---
+k create ns local --dry-run=client -oyaml > namespace.yaml
+k create deploy simple-deploy --image nginx --replicas=2 -n local --dry-run=client -oyaml > simple-deploy.yaml
+k rollout status deployment/simple-deploy -n local
+k rollout history deployment/simple-deploy -n local
+--- End Script ---
