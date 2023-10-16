@@ -15,5 +15,3 @@ spec:
     nodePort: 30000
   selector:
     app: simple-deploy
-status:
-  loadBalancer: {}
