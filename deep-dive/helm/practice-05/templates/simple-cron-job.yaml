@@ -1,0 +1,20 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: simple-cron-job
+  namespace: {{ .Values.app.namespace }}
+spec:
+  jobTemplate:
+    metadata:
+      name: simple-cron-job
+    spec:
+      template:
+        metadata:
+        spec:
+          containers:
+          - image: vimalsmenon/shell-script:no-failure
+            name: simple-cron-job
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: "* * * * *"
