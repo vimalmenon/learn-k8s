@@ -16,7 +16,23 @@ spec:
     volumeMounts:
     - name: simple-pvc
       mountPath: "/logs/pvc"
+    - name: simple-emptydir
+      mountPath: "/logs/emptydir"
+    - name: simple-hostpath
+      mountPath: "/logs/hostpath"
+    - name: simple-local-pvc
+      mountPath: "/logs/local"
+  nodeName: local-m02
   volumes:
   - name: simple-pvc
-    peristantVolumeClaim:
+    persistentVolumeClaim:
       claimName: simple-pvc
+  - name: simple-local-pvc
+    persistentVolumeClaim:
+      claimName: simple-local-pvc
+  - name: simple-emptydir
+    emptyDir: {}
+  - name: simple-hostpath
+    hostPath:
+      path: "/users/volumesHostPath"
+

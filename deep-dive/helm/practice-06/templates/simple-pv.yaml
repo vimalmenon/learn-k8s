@@ -10,4 +10,4 @@ spec:
   - ReadWriteOnce
   storageClassName: hostpath
   hostPath:
-    path: /Users/vimalmenon
+    path: /users/hostPath
