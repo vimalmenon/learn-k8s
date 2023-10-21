@@ -1,0 +1,22 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: simple-pod
+  name: simple-pod
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - image: alpine
+    name: simple-pod
+    args:
+    - "sleep"
+    - "50000"
+    volumeMounts:
+    - name: simple-pvc
+      mountPath: "/logs/pvc"
+  volumes:
+  - name: simple-pvc
+    peristantVolumeClaim:
+      claimName: simple-pvc
