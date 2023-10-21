@@ -22,7 +22,7 @@ spec:
       mountPath: "/logs/hostpath"
     - name: simple-local-pvc
       mountPath: "/logs/local"
-  nodeName: local-m02
+  nodeName: local-m03
   volumes:
   - name: simple-pvc
     persistentVolumeClaim:
