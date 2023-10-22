@@ -14,8 +14,6 @@ Mount this in a pod called logger at the location /var/www/nginx. This pod shoul
 
 
 ---------------------------------
-
-
 We have deployed a new pod called secure-pod and a service called secure-service. Incoming or Outgoing connections to this pod are not working.
 Troubleshoot why this is happening.
 
@@ -33,9 +31,8 @@ Next upgrade the deployment to version 1.17.
 
 Finally, once all pods are updated, undo the update and go back to the previous version.
 
+
 ---------------------------------
-
-
 Create a redis deployment with the following parameters:
 
 Name of the deployment should be redis using the redis:alpine image. It should have exactly 1 replica.
