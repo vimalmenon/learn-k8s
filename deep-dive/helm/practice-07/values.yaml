@@ -1,0 +1,15 @@
+---
+env: dev
+app:
+  namespace: local
+  deployment:
+    name: app-api
+    replicas: 5
+    labels:
+      app: api
+      tire: backend
+    backend:
+      name: app-api
+      image: vimalsmenon/app-backend
+      tag: yellow
+      port: 4000

@@ -1,0 +1,4 @@
+This is some practice
+
+Need to improve on Netpol
+Need to understand StorageClass

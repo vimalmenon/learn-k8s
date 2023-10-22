@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simple-cm
+  namespace: {{ .Values.app.namespace }}
+data:
+  APP_NAME: alphine
+  APP_TIMEOUT: "1000"

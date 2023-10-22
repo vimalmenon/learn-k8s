@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: simple-pod
+  name: simple-pod
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - args:
+    - sleep
+    - "50000"
+    image: alpine
+    name: simple-pod
+    env:
+    - name: APP_INLINE
+      value: test
+    - name: APP_INLINE_TIMEOUT
+      valueFrom:
+        configMapKeyRef:
+          name: simple-cm
+          key: APP_TIMEOUT
+    envFrom:
+    - configMapRef:
+        name : simple-cm
+    - configMapRef:
+        name : simple-cm-01
