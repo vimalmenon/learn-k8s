@@ -11,5 +11,5 @@ app:
     backend:
       name: app-api
       image: vimalsmenon/app-backend
-      tag: yellow
+      tag: netpol
       port: 4000

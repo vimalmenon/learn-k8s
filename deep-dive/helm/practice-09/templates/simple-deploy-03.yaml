@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deploy-03
+  name: simple-deploy-03
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-pod-03
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: simple-pod-03
+    spec:
+      containers:
+      - image: {{ .Values.app.deployment.backend.image}}:{{ .Values.app.deployment.backend.tag}}
+        name: {{ .Values.app.deployment.backend.name }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 4000
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: APP_API
+          value: simple-svc-04
+        - name: APP_NAME
+          value: simple-svc-03

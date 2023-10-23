@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-fe
+  name: simple-fe
+  namespace: local
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-fe-pod
+  template:
+    metadata:
+      labels:
+        app: simple-fe-pod
+    spec:
+      containers:
+      - image: vimalsmenon/app-frontend:new-ui
+        name: app-frontend
+        ports:
+        - containerPort: 3000
+        imagePullPolicy: Always
