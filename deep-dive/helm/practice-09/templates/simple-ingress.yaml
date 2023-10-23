@@ -17,7 +17,7 @@ spec:
             port:
               number: 3000
         path: /
-        pathType: Prefix
+        pathType: ImplementationSpecific
   - host: api.app.com
     http:
       paths:
