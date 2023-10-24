@@ -4,6 +4,7 @@ This is Network policy
 minikube start -n 3 -p local --cni calico
 minikube addons enable ingress -p local
 minikube addons enable metrics-server -p local
+minikube service list -p local
 
 https://kubernetes.github.io/ingress-nginx/examples/rewrite/
 

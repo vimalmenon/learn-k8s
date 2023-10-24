@@ -2,3 +2,5 @@ This is some practice
 
 Need to improve on Netpol
 Need to understand StorageClass
+
+https://bluexp.netapp.com/blog/cvo-blg-kubernetes-storageclass-concepts-and-common-operations
