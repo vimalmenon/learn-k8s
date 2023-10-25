@@ -1,0 +1,6 @@
+
+kubectl config view
+kubectl config use-context local
+kubectl config use-context research --kubeconfig=<config-file>
+
+cat ~/.kube/config
