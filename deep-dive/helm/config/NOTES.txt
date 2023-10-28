@@ -4,3 +4,5 @@ kubectl config use-context local
 kubectl config use-context research --kubeconfig=<config-file>
 
 cat ~/.kube/config
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#deployment-v1-apps
