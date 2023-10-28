@@ -13,4 +13,11 @@ kubectl rollout undo <deployment name> --to-revision=<version number>
 ** How to increase replica
 kubectl scale --replicas=5 deployment/simple-deploy
 kubectl scale --replicas=<number> <deployment name>
+NOTE:
+This doesn't show up in deployment version
 
+** How to delete the resource
+kubectl delete deployment simple-deploy
+kubectl delete <resource> <resource-name>
+
+** Other Command
