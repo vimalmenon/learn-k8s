@@ -1,0 +1,16 @@
+** This is to set image
+kubectl set image deployment/simple-deploy nginx=nginx:mainline-alpine
+kubectl set image <deployment name> container-name:image
+
+** How to annotate
+kubectl annotate deployment/simple-deploy kubernetes.io/change-cause="image updated new nginx:perl"
+kubectl annotate <deployment name> kubernetes.io/change-cause=<message>
+
+** How to rollback deployment
+kubectl rollout undo deployment/simple-deploy --to-revision=4
+kubectl rollout undo <deployment name> --to-revision=<version number>
+
+** How to increase replica
+kubectl scale --replicas=5 deployment/simple-deploy
+kubectl scale --replicas=<number> <deployment name>
+
