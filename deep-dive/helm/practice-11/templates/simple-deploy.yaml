@@ -1,0 +1,43 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-deployment
+  name: simple-deployment
+  namespace: {{ .Values.app.namespace }}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simple-deployment
+  template:
+    metadata:
+      labels:
+        app: simple-deployment
+    spec:
+      containers:
+      - image: alpine:3.18
+        name: alpine
+        ports:
+        - containerPort: 4000
+        command: ["sleep"]
+        args: ["10000"]
+        envFrom:
+        - configMapRef:
+            name: simple-configmap
+        volumeMounts:
+        - mountPath: "/logs/local"
+          name: local-pvc
+      volumes:
+      - name: local-pvc
+        persistentVolumeClaim:
+          claimName: simple-pvc
+        # startupProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: 4000
+        #   initialDelaySeconds: 120
+        #   periodSeconds: 50
+        #   failureThreshold: 2
+        

@@ -1,0 +1,23 @@
+Trying all the commands
+
+
+Deployment -> ReplicaSet -> Pod
+
+startupProbe:
+-  Startup probe run before any other probe. Other probes are disabled before this start
+readinessProbe: 
+livenessProbe:
+
+
+-- Commands --
+kubectl create ns local --dry-run=client -oyaml
+kubectl create deploy simple-deployment --image=alpine:3.18 --replicas=3 -n local --port 4000 --dry-run=client -oyaml
+kubectl create svc clusterip simple-service --tcp=4000:4000 -n local --dry-run=client -oyaml 
+kubectl create configmap simple-configmap --from-literal=APP=SIMPLE_APP --from-literal=SLEEP=2000 -n local --dry-run=client -oyaml
+kubectl -n local exec simple-deployment-f68d59864-4jl74 -- printenv
+
+
+k create -f ./namespace.yaml 
+k create -f ./simple-storageclass.yaml 
+k create -f ./simple-pvc.yaml 
+k create -f ./simple-deploy.yaml 
