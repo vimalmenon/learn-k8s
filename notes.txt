@@ -228,6 +228,7 @@ wernight/kubectl
 https://www.youtube.com/@PavanKumarAleti/videos
 https://github.com/aleti-pavan/ckad-practice-questions/tree/main/content/1
 https://unofficial-kubernetes.readthedocs.io/en/latest/
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#deployment-v1-apps
 
 
 What is list
