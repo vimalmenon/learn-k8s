@@ -1,0 +1,24 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: simple-busybox
+  name: simple-busybox
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - image: busybox:stable
+    name: simple-busybox
+    command: ["/bin/sh", "-c"]
+    args: ['while true; do echo "$(date) test \n" >> /logs/empty-dir/logs.txt; sleep 10;done']
+    volumeMounts:
+    - name: empty-dir
+      mountPath: /logs/empty-dir
+    resources:
+      requests:
+        cpu: 50m
+        memory: 100Mi
+  volumes:
+  - name: empty-dir
+    emptyDir: {}
