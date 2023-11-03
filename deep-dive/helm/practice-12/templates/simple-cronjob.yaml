@@ -1,0 +1,23 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: simple-cronjob
+  namespace: {{ .Values.app.namespace }}
+spec:
+  jobTemplate:
+    metadata:
+      name: simple-cronjob
+    spec:
+      completions: 10
+      parallelism: 3
+      template:
+        metadata:
+        spec:
+          containers:
+          - image: busybox:stable
+            name: simple-cronjob
+            command: ["/bin/sh", "-c"]
+            args: ['echo "$(date) test \n"']
+          restartPolicy: OnFailure
+  schedule: '0/30 * * * *'
