@@ -1,0 +1,14 @@
+Need to learn Helm again
+
+k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl -m 5 earth-3cc-web.earth:6363
+k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://project-plt-6cc-svc.pluto:3333
+k run tmp --restart=Never --rm --image=busybox -i -- wget -O- 10.12.2.15
+
+k create ns local ${=do}
+
+
+http://simple-service.local.svc.cluster.local
+http://10.244.60.3.local.pod.cluster.local:4000
+http://<service-name>.<namespace>.svc.cluster.local
+
+curl -m 5 http://simple-service.local.svc.cluster.local

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: simple-pod
+  name: simple-pod
+  namespace: {{ .Values.app.namespace }}
+spec:
+  containers:
+  - image: vimalsmenon/app-backend:red
+    name: simple-pod
+    ports:
+    - containerPort: 4000
