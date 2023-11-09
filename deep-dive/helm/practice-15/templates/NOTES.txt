@@ -1,0 +1,8 @@
+https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
+
+
+docker pull curlimages/curl
+
+http://192.168.64.140.local.pod.cluster.local:4000
+
+

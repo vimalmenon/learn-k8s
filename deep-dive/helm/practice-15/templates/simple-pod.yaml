@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: simple-pod
+  name: simple-pod
+  namespace: local
+spec:
+  containers:
+  - image: vimalsmenon/app-backend:netpol
+    name: simple-pod
+    resources: {}
+    ports:
+    - containerPort: 4000
+  restartPolicy: Always
